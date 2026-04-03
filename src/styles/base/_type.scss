@@ -1,0 +1,11 @@
+@use 'settings' as *;
+
+body {
+    font-family: $secondary;
+    color: $dark;
+    background-color: $light;
+}
+
+h1, h2, h3, h4 {
+    font-family: $primary;
+}
