@@ -1,0 +1,48 @@
+@use '../base/settings' as *;
+
+.my-story-title {
+	margin: 2rem 0 0 0;
+}
+
+.based-in {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+}
+
+.based-in svg {
+	rotate: 45deg;
+}
+
+.based-in-tagline {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.75rem;
+	letter-spacing: 1px;
+	font-weight: $bold;
+}
+
+.my-story-details {
+	margin: 2.5rem 1rem;
+	line-height: 1.2rem;
+}
+
+.toolbox-container {
+	width: 90%;
+	margin: 0 auto;
+	padding: 1rem;
+	background-color: transparent;
+	border: 1px solid $dark;
+	border-radius: 5px;
+	box-shadow: 5px 5px;
+	text-align: center;
+}
+
+.toolbox-title {
+	margin-bottom: 1rem;
+}
+
+.fun-facts {
+	margin-top: 2rem;
+}

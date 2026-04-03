@@ -1,10 +1,11 @@
-// import { appTitle } from '../globals/globalVariables';
+import { useEffect } from 'react';
+import { appTitle } from '../globals/appTitle';
 
 function PageHome(){
 
-	// useEffect(() => {
-	// 	document.title = `${appTitle} - Home`;
-	// }, []);
+	useEffect(() => {
+		document.title = `${appTitle}`;
+	}, []);
 
 	return (
 		<main>

@@ -1,0 +1,25 @@
+@use 'settings' as *;
+
+body {
+    font-family: $secondary;
+    color: $dark;
+    background-color: $light;
+}
+
+html, body, p {
+	margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3,
+.menu-title,
+.home-name {
+	font-family: $primary;
+	font-weight: $bold;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+h3 {
+	font-size: 1.5rem;
+}

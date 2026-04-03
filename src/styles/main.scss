@@ -1,9 +1,10 @@
 // base
 @use './base/reset';
 @use './base/settings';
-@use './base/type';
+@use './base/globals';
 
 // components
+@use './components/page-about';
 
 // utilities
 
