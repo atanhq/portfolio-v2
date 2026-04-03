@@ -1,10 +1,27 @@
+import { useState, useEffect } from 'react';
+import { appTitle } from '../globals/appTitle';
+import ToggleMenu from '../components/ToggleMenu'
+
 import Accordion from 'react-bootstrap/Accordion';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const MyStory = () => {
+function PageAbout(){
+
+    const [ isOpen, setIsOpen ] = useState(false)
+    const toggle = () => {
+        setIsOpen(!isOpen)
+    }
+
+    useEffect(() => {
+		document.title = `About - ${appTitle}`;
+	}, []);
 
 return (
-    <>
+    <main>
+        <ToggleMenu isOpen={isOpen} toggle={toggle} />
+
+        <div className={`portfolio-wrapper ${isOpen ? "active" : "inactive"}`}>
+
         <h2 className="my-story-title">My Story</h2>
 
         <div className="based-in">
@@ -48,9 +65,10 @@ return (
                 </Accordion>
             </div>
         </section>
-    </>
-)
+        </div>
+    </main>
+);
 
 }
 
-export default MyStory
+export default PageAbout;

@@ -1,0 +1,83 @@
+@use '../base/settings' as *;
+
+.project-single-title {
+	line-height: 1.75rem;
+}
+
+.single-title-close {
+	display: grid;
+	grid-template-columns: 90% 10%;
+	margin: 0.5rem;
+}
+
+.close {
+	text-align: right;
+}
+
+.project-single-stacks {
+	margin: 0.5rem;
+}
+
+.single-hero img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 5px;
+	margin: 1rem 0;
+}
+
+.single-links {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+	margin: 0 2rem;
+}
+
+.view-github,
+.view-live {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+	
+	a {
+		text-decoration: none;
+		font-size: 1rem;
+		text-transform: uppercase;
+		color: $dark;
+	}
+}
+
+.single-details {
+	margin: 2.5rem 0.5rem 0 0.5rem;
+}
+
+.single-details-label {
+	font-weight: 700;
+	margin-top: 1.5rem;
+	text-transform: uppercase;
+	font-family: $primary;
+}
+
+hr {
+	width: 2rem;
+	margin: 1rem auto;
+}
+
+.accordion-item {
+	border: none;
+}
+
+.accordion-button {
+	font-weight: 700;
+	text-transform: uppercase;
+	font-family: $primary;
+	font-size: 1.5rem;
+	text-align: right;
+}
+
+.accordion-button:not(.collapsed),
+.accordion-button.collapsed,
+.accordion-body {
+	background-color: $light;
+	color: $dark;
+}
