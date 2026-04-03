@@ -46,3 +46,24 @@
 .fun-facts {
 	margin-top: 2rem;
 }
+
+
+/* ---------- tablet styling ---------- */
+
+@media (min-width: 50em) {
+    
+	.my-story-extra {
+		display: grid;
+		grid-template-columns: 60% 1fr;
+		margin: 2rem;
+	}
+
+	.my-story-details {
+		grid-row: span 2 / span 2;
+		margin: 0;
+	}
+
+	.toolbox-container {
+		width: 50%;
+	}
+}

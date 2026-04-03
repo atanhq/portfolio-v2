@@ -1,0 +1,105 @@
+@use '../base/settings' as *;
+
+.menu {
+	position: fixed;
+	bottom: 0;
+	width: 100vw;
+    height: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $light;
+	z-index: 99;
+}
+
+.menu-title {
+	font-weight: $bold;
+	font-size: 0.9rem;
+	letter-spacing: 2px;
+	background-color: transparent;
+	border: none;
+}
+
+.menu-container {
+	display: flex;
+	justify-content: space-around;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	margin-bottom: 3rem;
+	font-family: $primary;
+	text-transform: uppercase;
+	opacity: 0;
+	transition: opacity 0s;
+}
+
+.menu-container ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	gap: 0.5rem;
+	font-size: 1.5rem;
+}
+
+.lets-chat {
+	justify-items: center;
+	align-content: center;
+}
+
+.lets-chat img {
+	display: block;
+	margin: 0 auto 1rem auto;
+}
+
+.lets-chat p:nth-child(2) {
+	font-size: 2rem;
+	font-weight: $bold;
+}
+
+.lets-chat p:nth-child(3) {
+	font-size: 0.8rem;
+	font-weight: $bold;
+	border: 1px solid $dark;
+	border-radius: 5px;
+	padding: 0 0.5rem;
+	box-shadow: 3px 3px;
+}
+
+.menu-container.active {
+	opacity: 1;
+	transition: opacity 0s 1s;
+}
+
+/* menu animation */
+.menu-container li {
+	overflow: hidden;
+	width: 100%;
+}
+
+@keyframes typing {
+	from { width: 0 }
+}
+
+.menu-container.active li {
+	animation: typing 1s steps(30) 1s;
+}
+
+
+/* ---------- tablet styling ---------- */
+
+@media (min-width: 50em) {
+
+	.menu {
+		width: 3rem;
+		height: 100vh;
+	}
+
+	.menu-title {
+		transform: rotate(270deg);
+		font-size: 1.2rem;
+		margin-left: 6rem;
+	}
+
+}

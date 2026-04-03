@@ -1,0 +1,19 @@
+@use '../base/settings' as *;
+
+.portfolio-wrapper {
+	height: 93vh;
+	/* background-color: aliceblue; */
+	overflow: scroll;
+	scrollbar-color: $dark $light;
+	scrollbar-width: thin;
+	inset: 0.5rem 0.5rem 15rem 0.5rem;
+	border: 2px solid $dark;
+	border-radius: 5px;
+	position: fixed;
+	overflow-x: hidden;
+	transition: 1s;
+}
+
+.portfolio-wrapper.active {
+	height: calc(93vh - 13rem);
+}
