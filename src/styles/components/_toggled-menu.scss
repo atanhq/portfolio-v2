@@ -64,7 +64,8 @@
 	font-weight: $bold;
 }
 
-.lets-chat p:nth-child(3) {
+.lets-chat p:nth-child(3),
+.copy-email {
 	font-size: 0.8rem;
 	font-weight: $bold;
 	border: 1px solid $dark;
@@ -124,11 +125,13 @@
 		transition: left 1s;
 		margin-top: 1rem;
 		border-right: 2px solid $dark;
+		opacity: 1;
 	}
 
 	.menu-container.active {
 		left: 0;
 		transition: left 1s;
+		opacity: 1;
 	}
 
 	.menu-container.active li {
@@ -164,5 +167,6 @@
 		border-radius: 5px;
 		padding: 0 0.5rem;
 		box-shadow: 3px 3px;
+		text-transform: uppercase;
 	}
 }

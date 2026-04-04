@@ -18,21 +18,6 @@
 
 @media (min-width: 75em) {
 
-	body::before {
-		content: "";
-		inset: 1rem 1rem 1rem 3rem;
-		// border: 2px solid $dark;
-		border-radius: 5px;
-		z-index: 99;
-		position: fixed;
-		background-color: transparent;
-	}
-
-	body.menu-open::before {
-		inset: 1rem 1rem 1rem 21.5rem;
-		transition: inset 1s;
-	}
-
 	.portfolio-wrapper {
 		inset: 1rem 1rem 1rem 3rem;
 	}

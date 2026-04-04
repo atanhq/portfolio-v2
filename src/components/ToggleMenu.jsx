@@ -29,7 +29,7 @@ const ToggleMenu = ({ isOpen, toggle }) => {
                 <div className="lets-chat">
                     <img src="https://placehold.co/40x40/000000/ffffff" />
                     <p>Let's chat<em>!</em></p>
-                    <p>Copy Email</p>
+                    <p className="copy-email">Copy Email</p>
                 </div>
             </nav>
         </>
