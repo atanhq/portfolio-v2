@@ -81,3 +81,40 @@ hr {
 	background-color: $light;
 	color: $dark;
 }
+
+
+@media (min-width: 50em) {
+    
+	.single-grid {
+		display: grid;
+		grid-template-columns: 1fr 50%;
+		margin: 2rem;
+	}
+
+	.single-hero {
+		grid-row: span 4 / span 4;
+	}
+
+	.single-hero img {
+		margin: 0;
+	}
+
+	.project-single-stacks {
+		grid-row-start: 2;
+		margin: 0;
+	}
+
+	.single-links {
+		grid-row-start: 3;
+	}
+
+	.single-details {
+		grid-row-start: 4;
+		margin: 0;
+	}
+
+	.project-single-title {
+		font-size: 3rem;
+		line-height: 3rem;
+	}
+}

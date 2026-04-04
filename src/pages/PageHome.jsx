@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { appTitle } from '../globals/appTitle';
 import ToggleMenu from '../components/ToggleMenu'
+import ProjectsAll from '../components/ProjectsAll'
 
 function PageHome(){
 
@@ -19,7 +20,7 @@ function PageHome(){
 			<ToggleMenu isOpen={isOpen} toggle={toggle} />
 
 			<div className={`portfolio-wrapper ${isOpen ? "active" : "inactive"}`}>
-				home page!!!!
+				<ProjectsAll />
 			</div>
 		</main>
 	);

@@ -17,3 +17,10 @@
 .portfolio-wrapper.active {
 	height: calc(93vh - 13rem);
 }
+
+@media (min-width: 50em) {
+
+	.portfolio-wrapper {
+		inset: 1rem 1rem 1rem 3rem;
+	}
+}
