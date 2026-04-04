@@ -1,26 +1,43 @@
 @use '../base/settings' as *;
 
 .portfolio-wrapper {
-	height: 93vh;
-	/* background-color: aliceblue; */
-	overflow: scroll;
+	// background-color: aliceblue;
+	overflow-y: scroll;
+	overflow-x: hidden;
 	scrollbar-color: $dark $light;
-	scrollbar-width: thin;
-	inset: 0.5rem 0.5rem 15rem 0.5rem;
+	inset: 0.5rem 0.5rem 3rem 0.5rem;
 	border: 2px solid $dark;
 	border-radius: 5px;
 	position: fixed;
-	overflow-x: hidden;
 	transition: 1s;
 }
 
 .portfolio-wrapper.active {
-	height: calc(93vh - 13rem);
+	inset: 0.5rem 0.5rem 16rem 0.5rem;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 75em) {
+
+	body::before {
+		content: "";
+		inset: 1rem 1rem 1rem 3rem;
+		// border: 2px solid $dark;
+		border-radius: 5px;
+		z-index: 99;
+		position: fixed;
+		background-color: transparent;
+	}
+
+	body.menu-open::before {
+		inset: 1rem 1rem 1rem 21.5rem;
+		transition: inset 1s;
+	}
 
 	.portfolio-wrapper {
+		inset: 1rem 1rem 1rem 3rem;
+	}
+
+	.portfolio-wrapper.active {
 		inset: 1rem 1rem 1rem 3rem;
 	}
 }
