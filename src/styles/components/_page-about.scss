@@ -52,18 +52,36 @@
 
 @media (min-width: 75em) {
     
-	.my-story-extra {
+	.about {
 		display: grid;
-		grid-template-columns: 60% 1fr;
-		margin: 2rem;
+		grid-template-columns: repeat(2, 1fr);
+		margin: 6rem 2rem 0 4rem;
+		gap: 4rem;
 	}
 
-	.my-story-details {
-		grid-row: span 2 / span 2;
-		margin: 0;
+	.about h1 {
+		font-size: 5rem;
+	}
+
+	.about-details {
+		margin-top: 2rem;
+		font-size: 1.2rem;
+
+		p {
+			padding: 0.5rem 0;
+		}
+	}
+
+	.right {
+		margin-top: 1rem;
 	}
 
 	.toolbox-container {
 		width: 50%;
+	}
+
+	.tools i {
+		font-size: 2rem;
+		margin: 0.5rem;
 	}
 }
