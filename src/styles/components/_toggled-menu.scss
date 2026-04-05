@@ -36,6 +36,11 @@
 	// background-color: yellow;
 }
 
+.menu-container a {
+	color: $dark;
+	text-decoration: none;
+}
+
 .menu-container ul {
 	list-style-type: none;
 	margin: 0;

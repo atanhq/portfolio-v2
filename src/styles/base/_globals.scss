@@ -1,14 +1,18 @@
 @use 'settings' as *;
 
 body {
-    font-family: $secondary;
-    color: $dark;
-    background-color: $light;
+	font-family: $secondary;
+	color: $dark;
+	background-color: $light;
 }
 
 html, body, p {
 	margin: 0;
-    padding: 0;
+  padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 h1, h2, h3,
@@ -22,4 +26,10 @@ h1, h2, h3,
 
 h3 {
 	font-size: 1.5rem;
+}
+
+.logo {
+	margin: 2rem;
+	position: absolute;
+	top: 0;
 }

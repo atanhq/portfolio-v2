@@ -53,7 +53,7 @@
 	}
 
 	.toast-slide {
-		animation: slideDown 0.75s ease 2s;
+		animation: slideDown 0.5s ease 1.5s;
 		animation-fill-mode: both;
 	}
 
@@ -74,11 +74,28 @@
 			border: 1px solid $dark;
 			border-radius: 5px;
 			padding: 0 0.5rem;
-			box-shadow: 3px 3px;
+			box-shadow: 3px 3px $dark;
 			text-transform: uppercase;
-			width: fit-content;
+			width: 47%;
+			margin-top: 0.75rem;
+			text-align: center;
+			transition: 0.5s;
+		}
+
+		.copy-email a {
+			color: $dark;
+			text-decoration: none;
+		}
+
+		// .copy-email:hover {
+		// 	border: 1px solid $light;
+		// 	background-color: $dark;
+		// 	color: $light;
+		// }
+
+		.notification-cta {
 			display: flex;
-			justify-self: right;
+			justify-content: space-between;
 		}
 
 }

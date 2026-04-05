@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { appTitle } from '../globals/appTitle';
+import { Link } from "react-router-dom";
 
 import ToggleMenu from '../components/ToggleMenu'
 import ProjectsAll from '../components/ProjectsAll'
@@ -25,6 +26,10 @@ function PageHome(){
 
 			<div className={`portfolio-wrapper ${isOpen ? "active" : "inactive"}`}>
 
+				<div className="logo">
+					<Link to="/"><img src="https://placehold.co/50x50/000000/FFF" /></Link>
+				</div>
+
 				<Notification />
 
 				<section className="landing">
@@ -37,7 +42,9 @@ function PageHome(){
 					<span>Designer</span>
 				</div>
 
-				<ProjectsAll />
+				<section id="projects">
+					<ProjectsAll />
+				</section>
 			</div>
 		</main>
 	);

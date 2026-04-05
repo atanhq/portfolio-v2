@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import close from "../assets/close.svg";
+import { HashLink } from "react-router-hash-link";
 
 const ToggleMenu = ({ isOpen, toggle }) => {
 
@@ -20,10 +21,10 @@ const ToggleMenu = ({ isOpen, toggle }) => {
             <nav className={`menu-container ${isOpen ? "active" : "inactive"}`}>
                 <div className="space"></div>
                 <ul>
-                    <li>Home</li>
-                    <li>Projects</li>
-                    <li>About</li>
-                    <li>Github</li>
+                    <li><a href="/">Home</a></li>
+                    <li><HashLink smooth to="/#projects">Projects</HashLink></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="https://github.com/atanhq">Github</a></li>
                 </ul>
 
                 <div className="lets-chat">
