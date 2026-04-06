@@ -6,9 +6,12 @@ import ProjectTofino from '../pages/ProjectTofino';
 import ProjectEscape from '../pages/ProjectEscape';
 import ProjectPortfolio from '../pages/ProjectPortfolio';
 
+import Header from '../components/Header'
+
 function AppRouter() {
   return (
     <BrowserRouter>
+      <Header />
         <Routes>
           <Route path="/" exact element={<PageHome />} />
           <Route path="/about" exact element={<PageAbout />} />

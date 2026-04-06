@@ -28,8 +28,9 @@ const ToggleMenu = ({ isOpen, toggle }) => {
                 </ul>
 
                 <div className="lets-chat">
-                    <img src="https://placehold.co/40x40/000000/ffffff" />
-                    <p>Let's chat<em>!</em></p>
+                    {/* <img src="https://placehold.co/40x40/000000/ffffff" />
+                    <p>Let's chat<em>!</em></p> */}
+                    <p className="chat-bubble">Fancy a chat? :)</p>
                     <p className="copy-email">Copy Email</p>
                 </div>
             </nav>

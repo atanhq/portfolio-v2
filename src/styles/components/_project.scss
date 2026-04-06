@@ -33,8 +33,7 @@
 	margin: 0 2rem;
 }
 
-.view-github,
-.view-live {
+.view-link {
 	display: flex;
 	gap: 0.5rem;
 	align-items: center;
@@ -44,6 +43,11 @@
 		font-size: 1rem;
 		text-transform: uppercase;
 		color: $dark;
+	}
+
+	img {
+		width: 1.5rem;
+		margin-bottom: 0.25rem;
 	}
 }
 
@@ -56,11 +60,6 @@
 	margin-top: 1.5rem;
 	text-transform: uppercase;
 	font-family: $primary;
-}
-
-hr {
-	width: 2rem;
-	margin: 1rem auto;
 }
 
 .accordion-item {
@@ -87,34 +86,45 @@ hr {
     
 	.single-grid {
 		display: grid;
-		grid-template-columns: 1fr 50%;
-		margin: 2rem;
-	}
-
-	.single-hero {
-		grid-row: span 4 / span 4;
+		grid-template-columns: repeat(2, 1fr);
+		margin: 3rem 2rem 0 3rem;
+		gap: 4rem;
 	}
 
 	.single-hero img {
 		margin: 0;
 	}
 
-	.project-single-stacks {
-		grid-row-start: 2;
-		margin: 0;
-	}
-
 	.single-links {
-		grid-row-start: 3;
+		font-size: 3rem;
+		padding: 1rem 0 0 0;
 	}
 
-	.single-details {
-		grid-row-start: 4;
-		margin: 0;
-	}
-
-	.project-single-title {
+	.single-title {
 		font-size: 3rem;
 		line-height: 3rem;
+		margin: 1rem 0 2rem 0;
+	}
+
+	.single-blurb {
+		margin-bottom: 2rem;
+	}
+
+	.view-link {
+		a {
+			font-size: 1.5rem;
+		}
+
+		span {
+			padding-left: 0.5rem;
+		}
+	}
+
+	.accordion {
+		--bs-accordion-btn-padding-x: 0;
+	}
+
+	.accordion-body {
+		padding: 1rem 0;
 	}
 }

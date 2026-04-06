@@ -4,7 +4,6 @@ import ToggleMenu from '../components/ToggleMenu'
 import { Link } from "react-router-dom";
 
 import Accordion from 'react-bootstrap/Accordion';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function PageAbout(){
 
@@ -23,10 +22,6 @@ return (
 
 			<div className={`portfolio-wrapper ${isOpen ? "active" : "inactive"}`}>
 
-			<div className="logo">
-				<Link to="/"><img src="https://placehold.co/50x50/000000/FFF" /></Link>
-			</div>
-
 			{/* <h2 className="my-story-title">My Story</h2> */}
 
 			{/* <div className="based-in">
@@ -37,7 +32,7 @@ return (
 			<section className="about">
 
 				<div className="left">
-					<h1>Hi, I'm Nana!</h1>
+					<h1>Hi! I'm Nana</h1>
 
 					<div className="about-details">
 						<p>I'm a web developer and designer based in <strong>Vancouver, BC</strong>. My passion for designing webpages started with one goal: to make a Myspace page that made people go WOW!</p>
@@ -76,7 +71,7 @@ return (
 									<Accordion.Item eventKey="0">
 											<Accordion.Header>What are some of your hobbies?</Accordion.Header>
 											<Accordion.Body>
-												<p>Writing and drawing - one of my dreams is to be able to illustrate the stories in my head. I also enjoy learning languages (the spoken kind) and going on runs.</p>
+												<p>Writing and drawing - I want to illustrate the stories in my head! I also love reading. Some of my favourite authors are Uketsu and Gillian Flynn.</p>
 											</Accordion.Body>
 									</Accordion.Item>
 

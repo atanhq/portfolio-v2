@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { appTitle } from '../globals/appTitle';
-import { Link } from "react-router-dom";
 
 import ToggleMenu from '../components/ToggleMenu'
 import ProjectsAll from '../components/ProjectsAll'
@@ -25,10 +24,6 @@ function PageHome(){
 			<ToggleMenu isOpen={isOpen} toggle={toggle} />
 
 			<div className={`portfolio-wrapper ${isOpen ? "active" : "inactive"}`}>
-
-				<div className="logo">
-					<Link to="/"><img src="https://placehold.co/50x50/000000/FFF" /></Link>
-				</div>
 
 				<Notification />
 
