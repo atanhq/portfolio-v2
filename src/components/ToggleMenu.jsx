@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import close from "../assets/close.svg";
 import { HashLink } from "react-router-hash-link";
+import CopyEmail from './CopyEmail';
 
 const ToggleMenu = ({ isOpen, toggle }) => {
 
@@ -30,7 +31,7 @@ const ToggleMenu = ({ isOpen, toggle }) => {
 
 						<div className="lets-chat">
 							<p className="chat-bubble">Fancy a chat?</p>
-							<button className="cta">Copy Email</button>
+							<CopyEmail />
 						</div>
 					</nav>
         </>

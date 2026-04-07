@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Toast from 'react-bootstrap/Toast';
 import { ToastContainer } from 'react-bootstrap';
 import { HashLink } from "react-router-hash-link";
+import CopyEmail from './CopyEmail';
 
 const Notification = () => {
 
@@ -20,7 +21,7 @@ const Notification = () => {
               </Toast.Header>
               <Toast.Body>Hey there! Thanks for stopping by. Fancy a chat? :)
                 <div className="notification">
-                  <button className="cta">Copy Email</button>
+                  <CopyEmail />
                   <button className="cta"><HashLink smooth to="/#projects">View Projects</HashLink></button>
                 </div>
               </Toast.Body>

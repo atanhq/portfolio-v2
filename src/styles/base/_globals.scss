@@ -36,6 +36,13 @@ h3 {
 	z-index: 999;
 }
 
+.success {
+	position: fixed;
+	z-index: -1;
+	margin-top: 5.5rem;
+	font-size: 0.85rem;
+}
+
 
 
 /* ---------- desktop styling ---------- */
