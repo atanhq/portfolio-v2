@@ -1,38 +1,29 @@
 @use '../base/settings' as *;
 
-.my-story-title {
-	margin: 2rem 0 0 0;
+.about {
+	max-width: 600px;
+	margin: 1rem auto;
 }
 
-.based-in {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 0.5rem;
+.about-left {
+	margin: 1rem;
+
+	h1 {
+		text-align: center;
+		margin: 1rem 0;
+		font-size: 5rem;
+	}
+	
 }
 
-.based-in svg {
-	rotate: 45deg;
-}
-
-.based-in-tagline {
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 0.75rem;
-	letter-spacing: 1px;
-	font-weight: $bold;
-}
-
-.my-story-details {
-	margin: 2.5rem 1rem;
-	line-height: 1.2rem;
+.about-details p {
+	padding: 0.5rem;
 }
 
 .toolbox-container {
-	width: 90%;
-	margin: 0 auto;
+	width: 50%;
+	margin: 2rem auto 0 auto;
 	padding: 1rem;
-	background-color: transparent;
 	border: 1px solid $dark;
 	border-radius: 5px;
 	box-shadow: 5px 5px;
@@ -41,6 +32,11 @@
 
 .toolbox-title {
 	margin-bottom: 1rem;
+}
+
+.tools i {
+	font-size: 2rem;
+	margin: 0.5rem;
 }
 
 .fun-facts {
@@ -53,19 +49,28 @@
 @media (min-width: 75em) {
     
 	.about {
+		max-width: none;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		margin: 6rem 2rem 0 5rem;
-		gap: 4rem;
+		margin: 5rem 2rem 0 5rem;
+		gap: 5rem;
+		height: 100%;
+		align-content: start;
 	}
 
-	.about h1 {
-		font-size: 5rem;
+	.about-left {
+		margin: auto;
+		justify-content: start;
+
+		h1 {
+			text-align: left;
+			margin: auto;
+		}
 	}
 
 	.about-details {
 		margin-top: 2rem;
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 
 		p {
 			padding: 0.5rem 0;
@@ -78,10 +83,5 @@
 
 	.toolbox-container {
 		width: 50%;
-	}
-
-	.tools i {
-		font-size: 2rem;
-		margin: 0.5rem;
 	}
 }

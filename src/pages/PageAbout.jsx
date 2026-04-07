@@ -9,12 +9,12 @@ function PageAbout(){
 
     const [ isOpen, setIsOpen ] = useState(false)
     const toggle = () => {
-        setIsOpen(!isOpen)
+			setIsOpen(!isOpen)
     }
 
     useEffect(() => {
-		document.title = `About - ${appTitle}`;
-	}, []);
+			document.title = `About - ${appTitle}`;
+		}, []);
 
 return (
     <main>
@@ -22,17 +22,10 @@ return (
 
 			<div className={`portfolio-wrapper ${isOpen ? "active" : "inactive"}`}>
 
-			{/* <h2 className="my-story-title">My Story</h2> */}
-
-			{/* <div className="based-in">
-					<i class="bi bi-pin-angle-fill"></i>
-					<p className="based-in-tagline">Based in Vancouver, BC</p>
-			</div> */}
-
 			<section className="about">
 
-				<div className="left">
-					<h1>Hi! I'm Nana</h1>
+				<div className="about-left">
+					<h1>About</h1>
 
 					<div className="about-details">
 						<p>I'm a web developer and designer based in <strong>Vancouver, BC</strong>. My passion for designing webpages started with one goal: to make a Myspace page that made people go WOW!</p>
