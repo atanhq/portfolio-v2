@@ -25,7 +25,8 @@ return (
 			<section className="about">
 
 				<div className="about-left">
-					<h1>About</h1>
+					<h1>Hello, <br />
+					I'm Nana!</h1>
 
 					<div className="about-details">
 						<p>I'm a web developer and designer based in <strong>Vancouver, BC</strong>. My passion for designing webpages started with one goal: to make a Myspace page that made people go WOW!</p>
@@ -62,7 +63,7 @@ return (
 					<div className="fun-facts">
 							<Accordion>
 									<Accordion.Item eventKey="0">
-											<Accordion.Header>What are some of your hobbies?</Accordion.Header>
+											<Accordion.Header>What are your hobbies?</Accordion.Header>
 											<Accordion.Body>
 												<p>Writing and drawing - I want to illustrate the stories in my head! I also love reading. Some of my favourite authors are Uketsu and Gillian Flynn.</p>
 											</Accordion.Body>

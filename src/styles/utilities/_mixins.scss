@@ -16,3 +16,10 @@
     color: $dark;
   }
 }
+
+@mixin link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $dark;
+
+}

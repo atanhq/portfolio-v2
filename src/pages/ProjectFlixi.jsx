@@ -4,6 +4,7 @@ import ToggleMenu from '../components/ToggleMenu'
 
 import Accordion from 'react-bootstrap/Accordion';
 import link from '../assets/link-out.svg';
+import github from '../assets/github.svg';
 
 function ProjectFlixi(){
 
@@ -24,13 +25,15 @@ function ProjectFlixi(){
 
 				<section className="single-grid">
 					<div className="single-left">
+						<h1>Flixi Movie Database</h1>
+
 						<div className="single-hero">
 							<img src="https://placehold.co/300x180/000000/FFF" />
 						</div>
 
 						<div className="single-links">
 							<div className="view-link">
-								<a href="/"><i className="devicon-github-original"></i> <span>Github</span></a>
+								<a href="/"><img src={github} alt="view github" /> <span>Github</span></a>
 							</div>
 
 							<div className="view-link">
@@ -51,7 +54,7 @@ function ProjectFlixi(){
 					</div>
 
 					<div className="single-right">
-						<h1 className="single-title">Flixi Movie Database</h1>
+						<h1>Flixi Movie Database</h1>
 
 						<div className="single-blurb">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>

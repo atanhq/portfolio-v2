@@ -1,7 +1,7 @@
 @use '../base/settings' as *;
 
 .about {
-	max-width: 600px;
+	max-width: 37.5rem;
 	margin: 1rem auto;
 }
 
@@ -9,9 +9,9 @@
 	margin: 1rem;
 
 	h1 {
-		text-align: center;
-		margin: 1rem 0;
-		font-size: 5rem;
+		font-size: 3rem;
+		line-height: 2.5rem;
+		margin: 2rem 1rem 1rem 1rem;
 	}
 	
 }
@@ -21,7 +21,7 @@
 }
 
 .toolbox-container {
-	width: 50%;
+	width: 70%;
 	margin: 2rem auto 0 auto;
 	padding: 1rem;
 	border: 1px solid $dark;
@@ -44,7 +44,7 @@
 }
 
 
-/* ---------- tablet styling ---------- */
+/* ---------- desktop styling ---------- */
 
 @media (min-width: 75em) {
     
@@ -54,12 +54,9 @@
 		grid-template-columns: repeat(2, 1fr);
 		margin: 5rem 2rem 0 5rem;
 		gap: 5rem;
-		height: 100%;
-		align-content: start;
 	}
 
 	.about-left {
-		margin: auto;
 		justify-content: start;
 
 		h1 {
