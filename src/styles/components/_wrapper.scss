@@ -1,7 +1,6 @@
 @use '../base/settings' as *;
 
 .portfolio-wrapper {
-	// background-color: aliceblue;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	scrollbar-color: $dark $light;

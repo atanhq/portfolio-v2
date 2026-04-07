@@ -10,30 +10,29 @@ const ToggleMenu = ({ isOpen, toggle }) => {
 
     return (
         <>
-        <div className="menu">
-            <button
-                className="menu-title" 
-                onClick={toggle}>
-            {!isOpen ? "Menu" : <img src={close} alt="close menu" className="close-svg" />}
-            </button>
-        </div>
+					<div className="menu">
+						<button
+								className="menu-title" 
+								onClick={toggle}>
+						{!isOpen ? "Menu" : <img src={close} alt="close menu" className="close-svg" />}
+						</button>
+					</div>
 
-            <nav className={`menu-container ${isOpen ? "active" : "inactive"}`}>
-                <div className="space"></div>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><HashLink smooth to="/#projects">Projects</HashLink></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="https://github.com/atanhq">Github</a></li>
-                </ul>
+					<nav className={`menu-container ${isOpen ? "active" : "inactive"}`}>
+						<div className="space"></div>
 
-                <div className="lets-chat">
-                    {/* <img src="https://placehold.co/40x40/000000/ffffff" />
-                    <p>Let's chat<em>!</em></p> */}
-                    <p className="chat-bubble">Fancy a chat? :)</p>
-                    <p className="copy-email">Copy Email</p>
-                </div>
-            </nav>
+						<ul>
+							<li><a href="/">Home</a></li>
+							<li><HashLink smooth to="/#projects">Projects</HashLink></li>
+							<li><a href="/about">About</a></li>
+							<li><a href="https://github.com/atanhq">Github</a></li>
+						</ul>
+
+						<div className="lets-chat">
+							<p className="chat-bubble">Fancy a chat?</p>
+							<button className="cta">Copy Email</button>
+						</div>
+					</nav>
         </>
     )
 }
