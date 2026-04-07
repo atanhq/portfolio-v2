@@ -27,15 +27,14 @@ function PageHome(){
 
 				<Notification />
 
-				<section className="landing">
-					<span className="home-name">Nana</span>
-					<img src={portrait} alt="portrait" className="portrait" />
+				<section className="home-landing">
+					<div className="home-tagline">
+						<span>Nana</span>
+						<span>Developer</span>
+						<span>Designer</span>
+					</div>
+					<img src={portrait} alt="portrait" className="home-portrait" />
 				</section>
-
-				<div className="tagline">
-					<span>Developer</span>
-					<span>Designer</span>
-				</div>
 
 				<section id="projects">
 					<ProjectsAll />

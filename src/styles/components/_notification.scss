@@ -1,0 +1,53 @@
+@use '../base/settings' as *;
+@use '../utilities/mixins' as *;
+
+// overwrite bootstrap styles
+.toast-body {
+	font-size: 0.85rem;
+}
+
+// custom styles
+.toast-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.notification {
+	display: flex;
+	justify-content: space-between;
+}
+
+.cta {
+	@include button;
+	margin-top: 0.75rem;
+	width: 47%;
+	font-size: 0.85rem;
+}
+
+.toast-slide {
+	animation: slideDown 0.5s ease 1.5s;
+	animation-fill-mode: both;
+}
+
+@keyframes slideDown {
+	from {
+		transform: translateY(-5rem);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+
+
+/* ---------- desktop styling ---------- */
+
+@media (min-width: 75em) {
+
+  .toast-wrapper {
+    justify-content: flex-end;
+  }
+
+}
