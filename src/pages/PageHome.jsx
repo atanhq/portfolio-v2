@@ -9,11 +9,11 @@ import portrait from '../assets/placeholder-home.png'
 
 function PageHome(){
 
-    // set state for nav toggle, passes to ToggleMenu.jsx
-    const [ isOpen, setIsOpen ] = useState(false)
-    const toggle = () => {
-        setIsOpen(!isOpen)
-    }
+	// set state for nav toggle, passes to ToggleMenu.jsx
+	const [ isOpen, setIsOpen ] = useState(false)
+	const toggle = () => {
+		setIsOpen(!isOpen)
+	}
 
 	useEffect(() => {
 		document.title = `${appTitle}`;
