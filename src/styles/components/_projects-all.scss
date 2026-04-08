@@ -1,106 +1,66 @@
 @use '../base/settings' as *;
 
-.projects-all-title,
-.my-story-title {
-	font-size: clamp(2rem, 20vw, 10rem);
-	letter-spacing: -0.5rem;
-	text-align: center;
-	margin: 2rem 0;
-}
-
-.projects-all-list {
-	border-bottom: 2px solid $dark;
-}
-
-.projects-all-item {
-	display: grid;
-	grid-template-columns: 20% 70% 10%;
-    grid-template-rows: 60% 40%;
-	border-top: 2px solid $dark;
-	align-items: center;
-	height: 8rem;
-}
-
-.number {
-	font-size: 4rem;
-	font-family: var(--primary-font);
-	color: transparent;
-	-webkit-text-stroke-width: 2px;
-	-webkit-text-stroke-color: $dark;
-	rotate: 270deg;
-	text-align: center;
-	line-height: 4rem;
-	grid-row: span 2 / span 2;
-}
-
-.all-title {
-	font-size: 2rem;
-	align-self: end;
-}
-
-.project-tagline {
-	font-family: $secondary;
-	font-size: 0.9rem;
-	display: none;
-}
-
-.stacks {
-	display: flex;
-	gap: 0.25rem;
-	grid-column-start: 2;
-    grid-row-start: 2;
-	align-self: start;
-}
-
-.arrow {
-	grid-row: span 2 / span 2;
-    grid-column-start: 3;
-    grid-row-start: 1;
-}
-
 
 /* ---------- tablet styling ---------- */
 
 @media (min-width: 75em) {
 
-	.projects-all-item {
-    	grid-template-columns: 10% 50% 30% 10%;
-		grid-template-rows: 1fr;
-	}
-
-	.number {
-		font-size: 6rem;
-		grid-column: 1;
-		grid-row: 1;
-	}
-
 	.all-title {
-		font-size: 5rem;
-		align-self: center;
-		grid-column: 2;
-		grid-row: 1;
+		text-align: center;
+		font-size: 10rem;
+		margin: 2rem 0;
 	}
 
-	.stacks {
-		margin: 0;
-		grid-column: 3;
-		grid-row: 1;
-		align-self: center;
+	.all {
+		width: max-content;
+		outline: 2px solid $dark;
+		border-radius: 5px;
+		box-shadow: 10px 10px $dark;
+		margin: 0 auto;
+		padding: 1rem 1rem 5rem 0;
+		text-align: right;
 	}
 
-	.project-tagline {
-		display:none;
+	.all-cards {
+		display: flex;
+		align-content: center;
+		flex-wrap: wrap;
+		gap: 2rem;
+		margin: 0 3rem;
+	}
+
+	.close {
+		width: 3rem;
+		margin-bottom: 1rem;
+		align-self: end;
+	}
+
+	.card {
+		width: 15rem;
+		outline: 2px solid $dark;
+		border-radius: 5px;
+		margin: 0 auto;
+		box-shadow: 6px 6px $dark;
+
+		&:hover {
+			transform: translateY(-2rem);
+		}
+	}
+
+	.card-image {
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.card-link {
+		display: flex;
+		justify-content: space-between;
+		margin: 0.25rem 0.5rem;
 	}
 
 	.arrow {
-		grid-column: 4;
-		grid-row: 1;
-		justify-self: center;
-
-		svg {
-			width: 50px;
-			height: 50px;
-		}
+		width: 1.5rem;
 	}
 
 }

@@ -5,6 +5,7 @@ import ProjectFlixi from '../pages/ProjectFlixi';
 import ProjectTofino from '../pages/ProjectTofino';
 import ProjectEscape from '../pages/ProjectEscape';
 import ProjectPortfolio from '../pages/ProjectPortfolio';
+import ProjectsAll from '../components/ProjectsAll';
 
 import Header from '../components/Header'
 
@@ -19,6 +20,7 @@ function AppRouter() {
           <Route path="/tofino" exact element={<ProjectTofino />} />
           <Route path="/escape" exact element={<ProjectEscape />} />
           <Route path="/portfolio" exact element={<ProjectPortfolio />} />
+          <Route path="/all" exact element={<ProjectsAll />} />
         </Routes>
     </BrowserRouter>
   );

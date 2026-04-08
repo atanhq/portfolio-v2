@@ -1,79 +1,71 @@
-const ProjectsAll = () => {
-    
-    return (
-        <>
-            <h2 className="projects-all-title">Projects</h2>
+import { useState, useEffect } from 'react';
+import { appTitle } from '../globals/appTitle';
 
-            <section className="projects-all-list">
+import ToggleMenu from '../components/ToggleMenu'
+import arrow from '../assets/arrow-right.svg';
+import close from '../assets/close.svg';
 
-                <div className="projects-all-item">
-                    <div className="number">01</div>
+function ProjectsAll(){
 
-                    {/* <div className="projects-all-details"> */}
-                        <h3 className="all-title">Tofino Time</h3>
-                        <p className="project-tagline">Book tours in Tofino</p>
-                        <div className="stacks">
-                            stacks here
-                        </div>
-                    {/* </div> */}
+	// set state for nav toggle, passes to ToggleMenu.jsx
+	const [ isOpen, setIsOpen ] = useState(false)
+	const toggle = () => {
+		setIsOpen(!isOpen)
+	}
 
-                    <div className="arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path fill="currentColor" d="M22 12a10 10 0 0 1-10 10A10 10 0 0 1 2 12A10 10 0 0 1 12 2a10 10 0 0 1 10 10M6 13h8l-3.5 3.5l1.42 1.42L17.84 12l-5.92-5.92L10.5 7.5L14 11H6z"/></svg>
-                    </div>
-                </div>
+	useEffect(() => {
+		document.title = `${appTitle}`;
+	}, []);
 
-                <div className="projects-all-item">
-                    <div className="number">02</div>
+	return (
+		<main>
+			<ToggleMenu isOpen={isOpen} toggle={toggle} />
 
-                    {/* <div className="projects-all-details"> */}
-                        <h3 className="all-title">Flixi</h3>
-                        <p className="project-tagline">Movie database with TMDB API</p>
-                        <div className="stacks">
-                            stacks here
-                        </div>
-                    {/* </div> */}
+			<div className={`portfolio-wrapper ${isOpen ? "active" : "inactive"}`}>
 
-                    <div className="arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path fill="currentColor" d="M22 12a10 10 0 0 1-10 10A10 10 0 0 1 2 12A10 10 0 0 1 12 2a10 10 0 0 1 10 10M6 13h8l-3.5 3.5l1.42 1.42L17.84 12l-5.92-5.92L10.5 7.5L14 11H6z"/></svg>
-                    </div>
-                </div>
+				<h2 className="all-title">Projects</h2>
 
-                <div className="projects-all-item">
-                    <div className="number">03</div>
+				<section className="all">
+					<img src={close} className="close" />
 
-                    {/* <div className="projects-all-details"> */}
-                        <h3 className="all-title">It's Me, Nana!</h3>
-                        <p className="project-tagline">Web developer and designer</p>
-                        <div className="stacks">
-                            stacks here
-                        </div>
-                    {/* </div> */}
+					<div className="all-cards">
+					<article className="card">
+						<div className="card-link">
+							<h3>Tofino.php</h3>
+							<img src={arrow} alt="view project" className="arrow" />
+						</div>
+						<img src="https://placehold.co/300x180/ccc/FFF" className="card-image" />
+					</article>
 
-                    <div className="arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path fill="currentColor" d="M22 12a10 10 0 0 1-10 10A10 10 0 0 1 2 12A10 10 0 0 1 12 2a10 10 0 0 1 10 10M6 13h8l-3.5 3.5l1.42 1.42L17.84 12l-5.92-5.92L10.5 7.5L14 11H6z"/></svg>
-                    </div>
-                </div>
+					<article className="card">
+						<div className="card-link">
+							<h3>Flixi.jsx</h3>
+							<img src={arrow} alt="view project" className="arrow" />
+						</div>
+						<img src="https://placehold.co/300x180/ccc/FFF" className="card-image" />
+					</article>
 
-                <div className="projects-all-item">
-                    <div className="number">04</div>
+					<article className="card">
+						<div className="card-link">
+							<h3>Portfolio.jsx</h3>
+							<img src={arrow} alt="view project" className="arrow" />
+						</div>
+						<img src="https://placehold.co/300x180/ccc/FFF" className="card-image" />
+					</article>
 
-                    {/* <div className="projects-all-details"> */}
-                        <h3 className="all-title">Escape</h3>
-                        <p className="project-tagline">Win the game to escape...</p>
-                        <div className="stacks">
-                            stacks here
-                        </div>
-                    {/* </div> */}
-
-                    <div className="arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path fill="currentColor" d="M22 12a10 10 0 0 1-10 10A10 10 0 0 1 2 12A10 10 0 0 1 12 2a10 10 0 0 1 10 10M6 13h8l-3.5 3.5l1.42 1.42L17.84 12l-5.92-5.92L10.5 7.5L14 11H6z"/></svg>
-                    </div>
-                </div>
-
-            </section>
-        </>
-    )
+					<article className="card">
+						<div className="card-link">
+							<h3>Escape.js</h3>
+							<img src={arrow} alt="view project" className="arrow" />
+						</div>
+						<img src="https://placehold.co/300x180/ccc/FFF" className="card-image" />
+					</article>
+					</div>
+				</section>
+			</div>
+		</main>
+	);
 
 }
 
-export default ProjectsAll
+export default ProjectsAll;
