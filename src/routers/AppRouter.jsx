@@ -15,9 +15,9 @@ function AppRouter() {
         <Routes>
           <Route path="/" exact element={<PageHome />} />
           <Route path="/about" exact element={<PageAbout />} />
-          <Route path="/flixi" exact element={<ProjectFlixi />} />
-          <Route path="/tofino" exact element={<ProjectTofino />} />
-          <Route path="/escape" exact element={<ProjectEscape />} />
+          <Route path="/flixi-movie-database" exact element={<ProjectFlixi />} />
+          <Route path="/tofino-time" exact element={<ProjectTofino />} />
+          <Route path="/escape-the-lair" exact element={<ProjectEscape />} />
           <Route path="/portfolio" exact element={<ProjectPortfolio />} />
         </Routes>
     </BrowserRouter>
