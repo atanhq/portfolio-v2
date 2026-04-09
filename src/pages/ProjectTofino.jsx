@@ -5,6 +5,7 @@ import ToggleMenu from '../components/ToggleMenu'
 import Accordion from 'react-bootstrap/Accordion';
 import link from '../assets/link-out.svg';
 import github from '../assets/github.svg';
+import tofino from '../assets/tofino.png';
 
 function ProjectTofino(){
 
@@ -28,7 +29,7 @@ function ProjectTofino(){
 						<h1>Tofino Time</h1>
 
 						<div className="single-hero">
-							<img src="https://placehold.co/300x180/000000/FFF" />
+							<img src={tofino} alt="Tofino Time project" />
 						</div>
 
 						<div className="single-links">

@@ -5,6 +5,7 @@ import ToggleMenu from '../components/ToggleMenu'
 import Accordion from 'react-bootstrap/Accordion';
 import link from '../assets/link-out.svg';
 import github from '../assets/github.svg';
+import portfolio from '../assets/portfolio.png';
 
 function ProjectPortfolio(){
 
@@ -28,7 +29,7 @@ function ProjectPortfolio(){
 						<h1>Portfolio</h1>
 
 						<div className="single-hero">
-							<img src="https://placehold.co/300x180/000000/FFF" />
+							<img src={portfolio} alt="Portfolio project" />
 						</div>
 
 						<div className="single-links">

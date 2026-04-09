@@ -5,6 +5,8 @@ import ToggleMenu from '../components/ToggleMenu'
 import Accordion from 'react-bootstrap/Accordion';
 import link from '../assets/link-out.svg';
 import github from '../assets/github.svg';
+// import flixi from '../assets/flixi.mov';
+import flixi from '../assets/flixi.png';
 
 function ProjectFlixi(){
 
@@ -28,7 +30,9 @@ function ProjectFlixi(){
 						<h1>Flixi Movie Database</h1>
 
 						<div className="single-hero">
-							<img src="https://placehold.co/300x180/000000/FFF" />
+							<img src={flixi} alt="Flixi Movie Database project" />
+
+							{/* <video src={flixi} width="640" height="400" autoPlay loop muted></video> */}
 						</div>
 
 						<div className="single-links">

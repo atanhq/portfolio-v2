@@ -51,8 +51,9 @@ return (
 						<i class="devicon-bootstrap-plain"></i>
 						<i class="devicon-wordpress-plain"></i>
 						<i class="devicon-woocommerce-plain"></i>
-						<i class="devicon-figma-plain"></i>
+						<i class="devicon-css3-plain"></i>
 						<br />
+						<i class="devicon-figma-plain"></i>
 						<i class="devicon-photoshop-plain"></i>
 						<i class="devicon-illustrator-plain"></i>
 						<i class="devicon-xd-plain"></i>

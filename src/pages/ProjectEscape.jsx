@@ -5,6 +5,7 @@ import ToggleMenu from '../components/ToggleMenu'
 import Accordion from 'react-bootstrap/Accordion';
 import link from '../assets/link-out.svg';
 import github from '../assets/github.svg';
+import escape from '../assets/escape.png';
 
 function ProjectEscape(){
 
@@ -28,7 +29,7 @@ function ProjectEscape(){
 						<h1>Escape the Demon Lair</h1>
 
 						<div className="single-hero">
-							<img src="https://placehold.co/300x180/000000/FFF" />
+							<img src={escape} alt="Escape the Lair project" />
 						</div>
 
 						<div className="single-links">
