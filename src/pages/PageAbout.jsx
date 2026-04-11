@@ -77,7 +77,7 @@ return (
 								</Accordion.Item>
 
 								<Accordion.Item eventKey="2">
-									<Accordion.Header>Any recs for foodie spots?</Accordion.Header>
+									<Accordion.Header>Recs for foodie spots?</Accordion.Header>
 									<Accordion.Body>
 										<p><strong>Canffle</strong> if you love a good brunch. <strong>East is East</strong> for an amazing dining experience. <strong>La Taqueria</strong> for their nachos. <strong>Paragon</strong> is known for their matcha, but don't sleep on their mango hojicha. And <strong>Just Pizza</strong> - give their adventurous ones a try!</p>
 									</Accordion.Body>

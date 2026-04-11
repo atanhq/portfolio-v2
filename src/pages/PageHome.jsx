@@ -30,8 +30,8 @@ function PageHome(){
 				<section className="home-landing">
 					<div className="home-tagline">
 						<span>Nana</span>
-						<span>Developer</span>
 						<span>Designer</span>
+						<span>Developer</span>
 					</div>
 					<img src={portrait} alt="portrait" className="home-portrait" />
 				</section>

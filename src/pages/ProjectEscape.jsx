@@ -34,23 +34,23 @@ function ProjectEscape(){
 
 						<div className="single-links">
 							<div className="view-link">
-								<a href="/"><img src={github} alt="view github" /> <span>Github</span></a>
+								<a href="https://github.com/atanhq/js-game"><img src={github} alt="view github" /> <span>Github</span></a>
 							</div>
 
 							<div className="view-link">
-								<a href="/"><img src={link} alt="view live" /> <span>Live</span></a>
+								<a href="https://nanatan.com/escape/"><img src={link} alt="view live" /> <span>Live</span></a>
 							</div>
 						</div>
 
 						<div className="single-details">
 							<p className="single-details-label">Role</p>
-							<p>Designer & Developer</p>
+							<p>Developer</p>
 							
 							<p className="single-details-label">Tools Used</p>
-							<p>React, Bootstrap, Photoshop, XD</p>
+							<p>Javascript, Illustrator</p>
 							
 							<p className="single-details-label">Skills Gained</p>
-							<p>API integration, React Redux, Bootstrap</p>
+							<p>Javascript, CSS animations</p>
 						</div>
 					</div>
 
@@ -58,34 +58,26 @@ function ProjectEscape(){
 						<h1>Escape the Demon Lair</h1>
 
 						<div className="single-blurb">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>
+								<em>Hello ...? Can anyone hear me ...?</em> You wake up in an abyss, your senses dull to the eerieness around you. Where are you? How did you get here? You hear laughter echoing against distant walls - then you see them: those red, glowing eyes, curved in mischief. You're in the demons' lair, and the only way out is to beat them at their own game.
+							</p>
 						</div>
 
 						<div className="single-accordion">
 							<Accordion defaultActiveKey="0">
 								<Accordion.Item eventKey="0">
-									<Accordion.Header><h2>Vision</h2></Accordion.Header>
+									<Accordion.Header><h2>The Vision</h2></Accordion.Header>
 										<Accordion.Body>
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-											eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-											minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-											aliquip ex ea commodo consequat. Duis aute irure dolor in
-											reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-											pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-											culpa qui officia deserunt mollit anim id est laborum.
+											When I first received details of this project, I knew I wanted to do a story element. It was mid-October, a few weeks out from Halloween, and I was already in the spooky spirit, so dropping the player into a demon lair came naturally. My vision was simple: a dialogue sequence to set a dark tone, a gameboard that shakes when the demon loses, and an ending scene that loops back to the gameboard to imply that, even if the player "wins," they can never escape. Terrifying, isn't it? I spooked myself coding it late into the night!
 										</Accordion.Body>
 								</Accordion.Item>
 
 								<Accordion.Item eventKey="1">
 									<Accordion.Header><h2>Reflection</h2></Accordion.Header>
 										<Accordion.Body>
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-											eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-											minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-											aliquip ex ea commodo consequat. Duis aute irure dolor in
-											reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-											pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-											culpa qui officia deserunt mollit anim id est laborum.
+											<p><em>Escape the Demon Lair</em> was my first ever "coding project." I'd dabbled with HTML and CSS before, but when it came to programming languages, I knew next to nothing. It was difficult to wrap my head around loops and if-else statements - but I had a vision, and I wanted to make it real. Developing this game led me to learn those core concepts and solidify a foundation that I could later build up from.</p>
+											<br />
+											<p>While the player's enemy was the demons I'd created, my enemy was the conditionals. Every time a hand is played, the demon's eyes, dialogue, and health bar changes. I initially tried to include it within the if-else statement that determines whether the demon wins, loses, or draws, but the statement quickly became too convulted and nested. My solution was to separate each result into its own function, which I could then call when a condition was met.</p>
 										</Accordion.Body>
 								</Accordion.Item>
 							</Accordion>

@@ -22,7 +22,7 @@ const Notification = () => {
               <Toast.Body>Hey there! Thanks for stopping by. Fancy a chat? :)
                 <div className="notification">
                   <CopyEmail />
-                  <button className="cta"><HashLink smooth to="/#projects">View Projects</HashLink></button>
+                  <HashLink smooth to="/#projects" className="cta">View Projects</HashLink>
                 </div>
               </Toast.Body>
             </Toast>
