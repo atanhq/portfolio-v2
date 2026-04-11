@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
 import { appTitle } from '../globals/appTitle';
-import ToggleMenu from '../components/ToggleMenu'
+import { Link } from "react-router-dom";
 
+import ToggleMenu from '../components/ToggleMenu'
 import Accordion from 'react-bootstrap/Accordion';
+
 import link from '../assets/link-out.svg';
 import github from '../assets/github.svg';
 import portfolio from '../assets/portfolio.png';
@@ -66,14 +68,18 @@ function ProjectPortfolio(){
 								<Accordion.Item eventKey="0">
 									<Accordion.Header><h2>The Vision</h2></Accordion.Header>
 										<Accordion.Body>
-											<p>Ever since my first mockup, I'd wanted to do a container design. I was inspired by the layout of a computer screen and big, bold typography that takes advantage of all the white space.</p>
+											<p><em>Show your personality</em>. That was our directive for the portfolio project. For weeks, I pondered what that meant for me and how I could translate it into a design. I looked at my workspace, the websites I admired, and the graphics that caught my eye, and found a common thread between them: simple, clean, and mostly monochromatic. Knowing that my portfolio would be stripped of colour, I pushed myself with its design, so even though it appears minimalistic, it still has personality.</p>
 										</Accordion.Body>
 								</Accordion.Item>
 
 								<Accordion.Item eventKey="1">
 									<Accordion.Header><h2>Reflection</h2></Accordion.Header>
 										<Accordion.Body>
-											<p><em>Show your personality.</em> That was our directive for the portfolio. For weeks, I pondered what that meant for me and how I could translate that into a design. I looked at my room, my clothes, the websites that I admired, and found the common thread: simple, clean, and mostly monochromatic. Since I value minimalism, I pushed myself with several iterations before settling on the one you see before you. The animations are subtle, and the content is spaced out and easy on the eyes. I wanted to bring a calm and reflective experience to anyone who visits my page.</p>
+											<p>I went through several iterations before settling on this current design. From the beginning, I knew I wanted a container element - something that emulated the digital experience of a computer screen without all the noise, so I opted for subtle animations and content that's easy on the eyes. At my core, I am a reflective person; the negative space in my design is intended to emphasize that by giving "breathing room."</p>
+
+											<p>When developing the desktop home page, I applied what I learned in my design and UX/UI courses and considered how I wanted to guide the user's eye. Since we tend to read left to right, I placed my logo in the upper left, then drew attention to the right with a notification that slides in a second later. For the mobile navigation, I chose to move it to the bottom so it's easier for a phone user to tap on it.</p>
+
+											<p>I carried what I'd learned into my Capstone project, <Link to="/tofino-time"><img src={link} alt="view live" /> Tofino Time</Link> - coming soon!</p>
 										</Accordion.Body>
 								</Accordion.Item>
 							</Accordion>
