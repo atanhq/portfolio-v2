@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import PageHome from '../pages/PageHome';
 import PageAbout from '../pages/PageAbout';
@@ -5,13 +6,19 @@ import ProjectFlixi from '../pages/ProjectFlixi';
 import ProjectTofino from '../pages/ProjectTofino';
 import ProjectEscape from '../pages/ProjectEscape';
 import ProjectPortfolio from '../pages/ProjectPortfolio';
-
 import Header from '../components/Header'
 
 function AppRouter() {
+
+  // set state for nav toggle, passes to ToggleMenu.jsx
+	const [ isOpen, setIsOpen ] = useState(false)
+	const toggle = () => {
+		setIsOpen(!isOpen)
+	}
+
   return (
     <BrowserRouter>
-      <Header />
+      <Header isOpen={isOpen} toggle={toggle} />
         <Routes>
           <Route path="/" exact element={<PageHome />} />
           <Route path="/about" exact element={<PageAbout />} />

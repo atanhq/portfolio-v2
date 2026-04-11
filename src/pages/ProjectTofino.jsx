@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import { appTitle } from '../globals/appTitle';
-import ToggleMenu from '../components/ToggleMenu'
 
+import ToggleMenu from '../components/ToggleMenu'
 import Accordion from 'react-bootstrap/Accordion';
+
 import link from '../assets/link-out.svg';
 import github from '../assets/github.svg';
 import tofino from '../assets/tofino.png';

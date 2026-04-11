@@ -1,15 +1,15 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { appTitle } from '../globals/appTitle';
 import ToggleMenu from '../components/ToggleMenu'
 
 import Accordion from 'react-bootstrap/Accordion';
 
-function PageAbout(){
+function PageAbout({ isOpen }){
 
-	const [ isOpen, setIsOpen ] = useState(false)
-	const toggle = () => {
-		setIsOpen(!isOpen)
-	}
+	// const [ isOpen, setIsOpen ] = useState(false)
+	// const toggle = () => {
+	// 	setIsOpen(!isOpen)
+	// }
 
 	useEffect(() => {
 		document.title = `About - ${appTitle}`;
@@ -17,7 +17,7 @@ function PageAbout(){
 
 return (
 	<main>
-		<ToggleMenu isOpen={isOpen} toggle={toggle} />
+		{/* <ToggleMenu isOpen={isOpen} toggle={toggle} /> */}
 
 		<div className={`portfolio-wrapper ${isOpen ? "active" : "inactive"}`}>
 

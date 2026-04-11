@@ -144,7 +144,8 @@
 			transition: opacity 300ms, clip-path 300ms;
 		}
 
-		&:hover::after {
+		&:hover::after,
+		&:focus::after {
 			clip-path: inset(0 0% 0 0);
 		}
 	}

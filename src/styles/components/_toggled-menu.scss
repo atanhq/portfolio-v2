@@ -31,7 +31,8 @@
 	font-family: $primary;
 	text-transform: uppercase;
 	opacity: 0;
-	transition: opacity 0s;
+	transition: opacity 0s, visibility 0s;
+	visibility: hidden;
 
 	a {
 		color: $dark;
@@ -50,7 +51,8 @@
 
 .menu-container.active {
 	opacity: 1;
-	transition: opacity 0s 1s;
+	visibility: visible;
+	transition: opacity 0s 1s, visibility 0s 1s;
 }
 
 .space {
@@ -169,6 +171,7 @@
 		transition: left 1s;
 		opacity: 1;
 		z-index: 9;
+		visibility: visible;
 
 		ul {
 			font-size: 2.25rem;
@@ -185,6 +188,7 @@
 		left: 0;
 		transition: left 1s;
 		opacity: 1;
+		visibility: visible;
 	}
 
 	.space {

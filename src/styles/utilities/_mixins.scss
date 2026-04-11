@@ -14,7 +14,8 @@
   text-decoration: none;
   transition: 0.3s ease-in-out;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border: 1px solid $accent;
     box-shadow: 3px 3px $accent;
     color: $accent;
@@ -44,7 +45,8 @@
     transition: opacity 300ms, transform 300ms;
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }

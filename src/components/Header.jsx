@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import logo from '../../public/favicon-96x96.png';
+import ToggleMenu from '../components/ToggleMenu'
 
-const Header = () => {
+const Header = ({ isOpen, toggle }) => {
 
     return (
       <>
@@ -9,6 +10,8 @@ const Header = () => {
           <div className="logo">
             <Link to="/"><img src={logo} alt="logo" /></Link>
           </div>
+
+          <ToggleMenu isOpen={isOpen} toggle={toggle} />
         </header>
       </>
     )
