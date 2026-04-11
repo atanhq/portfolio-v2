@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logo from '../../public/favicon-96x96.png';
 
 const Header = () => {
 
@@ -6,7 +7,7 @@ const Header = () => {
       <>
         <header>
           <div className="logo">
-            <Link to="/"><img src="https://placehold.co/50x50/000000/FFF" /></Link>
+            <Link to="/"><img src={logo} /></Link>
           </div>
         </header>
       </>

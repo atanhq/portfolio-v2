@@ -1,1 +1,1 @@
-export const appTitle = 'It\'s Me, Nana!';
+export const appTitle = 'NANA! Portfolio';
