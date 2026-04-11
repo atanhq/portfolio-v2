@@ -3,6 +3,8 @@ import close from "../assets/close.svg";
 import { HashLink } from "react-router-hash-link";
 import CopyEmail from './CopyEmail';
 
+import { TypeAnimation } from 'react-type-animation';
+
 const ToggleMenu = ({ isOpen, toggle }) => {
 
     useEffect(() => {

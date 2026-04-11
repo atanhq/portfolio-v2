@@ -4,6 +4,7 @@ import { appTitle } from '../globals/appTitle';
 import ToggleMenu from '../components/ToggleMenu'
 import ProjectsAll from '../components/ProjectsAll'
 import Notification from '../components/Notification'
+import Copyright from '../components/Copyright'
 
 import portrait from '../assets/placeholder-home.png'
 
@@ -39,6 +40,8 @@ function PageHome(){
 				<section id="projects">
 					<ProjectsAll />
 				</section>
+
+				<Copyright />
 			</div>
 		</main>
 	);

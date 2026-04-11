@@ -21,7 +21,8 @@
 
 .menu-container {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	padding: 0 2rem;
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -86,15 +87,55 @@
 /* menu animation */
 .menu-container li {
 	overflow: hidden;
-	width: 100%
+	width: 100%;
+	margin: 0.15rem 0;
+	letter-spacing: 2px;
+	line-height: 2rem;
+	border-right: 1.5px solid transparent;
 }
 
-.menu-container.active li {
-	animation: typing 1s steps(30) 1s;
+.menu-container.active li:nth-child(1) {
+	animation: typing-home 0.5s steps(5) 1s forwards, blinking .85s step-end infinite;
+}
+@keyframes typing-home {
+	from { width: 0 } to { width: 5ch }
 }
 
-@keyframes typing {
-	from { width: 0 }
+.menu-container.active li:nth-child(2) {
+	animation: typing-projects 0.5s steps(10) 1s forwards, blinking .85s step-end infinite;
+}
+@keyframes typing-projects {
+	from { width: 0 } to { width: 10ch }
+}
+
+.menu-container.active li:nth-child(3) {
+	animation: typing-about 0.5s steps(7) 1s forwards, blinking .85s step-end infinite;
+}
+@keyframes typing-about {
+	from { width: 0 } to { width: 7ch }
+}
+
+.menu-container.active li:nth-child(4) {
+	animation: typing-github 0.5s steps(8) 1s forwards, blinking .85s step-end infinite;
+}
+@keyframes typing-github {
+	from { width: 0 } to { width: 8ch }
+}
+
+@keyframes blinking {
+	from, to { border-color: transparent }
+  50% { border-color: $dark; }
+}
+
+
+
+/* ---------- tablet styling ---------- */
+@media (min-width: 35em) {
+
+	.menu-container {
+		padding: 0 5rem;
+	}
+
 }
 
 
@@ -132,16 +173,18 @@
 		ul {
 			font-size: 2.25rem;
 		}
+
+		li {
+			@include underline;
+			width: 0;
+			padding: 0.75rem 0;
+		}
 	}
 
 	.menu-container.active {
 		left: 0;
 		transition: left 1s;
 		opacity: 1;
-	}
-
-	.menu-container.active li {
-		animation: typing 1.5s steps(30) 0s;
 	}
 
 	.space {
