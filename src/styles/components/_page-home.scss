@@ -11,7 +11,7 @@
 .home-tagline {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: 60% 40%;
+	grid-template-rows: 60% 40% 40%;
 
 	// name
 	span:nth-child(1) {
@@ -28,11 +28,18 @@
 	span:nth-child(2),
 	span:nth-child(3) {
 		grid-row-start: 2;
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 		font-weight: $bold;
 		text-transform: uppercase;
 		align-self: end;
-		justify-self: center;
+	}
+
+	span:nth-child(2) {
+		justify-self: start;
+	}
+
+	span:nth-child(3) {
+		justify-self: end;
 	}
 }
 
@@ -63,12 +70,14 @@
 		// taglines
 		span:nth-child(2) {
 			font-size: 2rem;
-			padding-right: 5rem;
+			justify-self: center;
+			padding-right: 7rem;
 		}
 
 		span:nth-child(3) {
 			font-size: 2rem;
-			padding-left: 5rem;
+			justify-self: center;
+			padding-left: 7rem;
 		}
 	}
 

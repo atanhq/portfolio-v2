@@ -52,7 +52,7 @@
 		max-width: none;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		margin: 5rem 2rem 0 5rem;
+		margin: 5rem;
 		gap: 5rem;
 	}
 
@@ -69,7 +69,7 @@
 
 	.about-details {
 		margin-top: 2rem;
-		font-size: 1.1rem;
+		font-size: 1.25rem;
 
 		p {
 			padding: 0.5rem 0;
@@ -81,6 +81,7 @@
 	}
 
 	.toolbox-container {
+		margin: 0 auto;
 		width: 50%;
 	}
 }

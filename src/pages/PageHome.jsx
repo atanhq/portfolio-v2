@@ -32,7 +32,7 @@ function PageHome(){
 					<div className="home-tagline">
 						<span>Nana</span>
 						<span>Developer</span>
-						<span>Designer</span>
+						<span>UX/UI Designer</span>
 					</div>
 					<img src={portrait} alt="portrait" className="home-portrait" />
 				</section>

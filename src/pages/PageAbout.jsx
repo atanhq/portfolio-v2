@@ -25,16 +25,14 @@ return (
 
 			<div className="about-left">
 				<h1>Hello, <br />
-				I'm Nana!</h1>
+				I'm Nana.</h1>
 
 				<div className="about-details">
-					<p>I'm a web developer and designer based in <strong>Vancouver, BC</strong>. My passion for designing webpages started with one goal: to make a Myspace page that made people go WOW!</p>
+					<p>I'm a Front-End Developer and UX/UI Designer based in Vancouver.</p>
 
-					<p>But with Myspace coming to an end, I found myself looking towards other pursuits. I graduated with a degree in Business Management and Psychology.</p>
-
-					<p>It wasn't until I was well into my corporate career did I realize a future in web development was possible. It was a difficult choice, as is every career change, but when I set foot in BCIT's Front-End Developer Program, I knew this was where I wanted to be.</p>
-
-					<p>So now I'm back here with the same goal: to make you go WOW!</p>
+					<p>To me, development is a lot like storytelling where every colour, every piece of content, and every line of code builds a unique experience for the end user.</p>
+					
+					<p>Along with my Front-End Web Development certificate from BCIT, I hold a BA in Business Management and Psychology with a specialization in positive psychology - a subfield that focuses on human satisfaction and accomplishment. I take this people-first, interaction-oriented approach when conceptualizing my designs.</p>
 				</div>
 			</div>
 
@@ -65,14 +63,14 @@ return (
 								<Accordion.Item eventKey="0">
 									<Accordion.Header>What are your hobbies?</Accordion.Header>
 									<Accordion.Body>
-										<p>Writing and drawing - I want to illustrate the stories in my head! I also love reading. Some of my favourite authors are Uketsu and Gillian Flynn.</p>
+										<p>Writing! I've been telling stories for as long as I can remember. I also love reading. Some of my favourite authors are Uketsu and Gillian Flynn.</p>
 									</Accordion.Body>
 								</Accordion.Item>
 
 								<Accordion.Item eventKey="1">
 									<Accordion.Header>How about your MBTI?</Accordion.Header>
 									<Accordion.Body>
-										<p>Drumroll please ... INTP! Creative and resourceful, I like to push the envelope of what is possible, analyzing, researching, and plunging myself into the depths of whatever captures my interest.</p>
+										<p>INTP, the Logician. Creative and resourceful, I like to push the envelope of what is possible, analyzing, researching, and plunging myself into the depths of whatever captures my interest. Lately, it's been the Hook Model.</p>
 									</Accordion.Body>
 								</Accordion.Item>
 
