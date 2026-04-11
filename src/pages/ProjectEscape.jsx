@@ -59,7 +59,7 @@ function ProjectEscape(){
 
 						<div className="single-blurb">
 							<p>
-								<em>Hello ...? Can anyone hear me ...?</em> You wake up in an abyss, your senses dull to the eerieness around you. Where are you? How did you get here? You hear laughter echoing against distant walls - then you see them: those red, glowing eyes, curved in mischief. You're in the demons' lair, and the only way out is to beat them at their own game.
+								<em>Hello ...? Can anyone hear me ...?</em> You wake up in an abyss, your senses dull to the eerieness around you. Where are you? How did you get here? You hear laughter echoing against distant walls - then you see them: those glowing red eyes, curved in mischief. You've fallen into the depths of the demon's lair, and the only way out is to beat them at their own game.
 							</p>
 						</div>
 
@@ -68,7 +68,7 @@ function ProjectEscape(){
 								<Accordion.Item eventKey="0">
 									<Accordion.Header><h2>The Vision</h2></Accordion.Header>
 										<Accordion.Body>
-											When I first received details of this project, I knew I wanted to do a story element. It was mid-October, a few weeks out from Halloween, and I was already in the spooky spirit, so dropping the player into a demon lair came naturally. My vision was simple: a dialogue sequence to set a dark tone, a gameboard that shakes when the demon loses, and an ending scene that loops back to the gameboard to imply that, even if the player "wins," they can never escape. Terrifying, isn't it? I spooked myself coding it late into the night!
+											<p>When I first received details of this project, I knew I wanted to do a story element. It was mid-October, a few weeks out from Halloween, and I was already in the spooky spirit, so dropping the player into a demon lair came naturally. My vision was simple: a dialogue sequence to set a dark tone, a gameboard that shakes when the demon loses, and an ending scene that loops back to the gameboard to imply that, even if the player "wins," they can never escape. Terrifying, isn't it? I spooked myself coding it late into the night!</p>
 										</Accordion.Body>
 								</Accordion.Item>
 

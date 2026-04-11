@@ -34,7 +34,7 @@ function ProjectPortfolio(){
 
 						<div className="single-links">
 							<div className="view-link">
-								<a href="/"><img src={github} alt="view github" /> <span>Github</span></a>
+								<a href="https://github.com/atanhq/portfolio-v2"><img src={github} alt="view github" /> <span>Github</span></a>
 							</div>
 
 							<div className="view-link">
@@ -47,10 +47,10 @@ function ProjectPortfolio(){
 							<p>Designer & Developer</p>
 							
 							<p className="single-details-label">Tools Used</p>
-							<p>React, Bootstrap, Photoshop, XD</p>
+							<p>React, Bootstrap, Figma</p>
 							
 							<p className="single-details-label">Skills Gained</p>
-							<p>API integration, React Redux, Bootstrap</p>
+							<p>Router, Bootstrap, Prototyping</p>
 						</div>
 					</div>
 
@@ -58,34 +58,22 @@ function ProjectPortfolio(){
 						<h1>Portfolio</h1>
 
 						<div className="single-blurb">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>Hi, I'm Nana! I'm a front-end web developer and designer based in Vancouver, BC.</p>
 						</div>
 
 						<div className="single-accordion">
 							<Accordion defaultActiveKey="0">
 								<Accordion.Item eventKey="0">
-									<Accordion.Header><h2>Vision</h2></Accordion.Header>
+									<Accordion.Header><h2>The Vision</h2></Accordion.Header>
 										<Accordion.Body>
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-											eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-											minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-											aliquip ex ea commodo consequat. Duis aute irure dolor in
-											reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-											pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-											culpa qui officia deserunt mollit anim id est laborum.
+											<p>Ever since my first mockup, I'd wanted to do a container design. I was inspired by the layout of a computer screen and big, bold typography that takes advantage of all the white space.</p>
 										</Accordion.Body>
 								</Accordion.Item>
 
 								<Accordion.Item eventKey="1">
 									<Accordion.Header><h2>Reflection</h2></Accordion.Header>
 										<Accordion.Body>
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-											eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-											minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-											aliquip ex ea commodo consequat. Duis aute irure dolor in
-											reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-											pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-											culpa qui officia deserunt mollit anim id est laborum.
+											<p><em>Show your personality.</em> That was our directive for the portfolio. For weeks, I pondered what that meant for me and how I could translate that into a design. I looked at my room, my clothes, the websites that I admired, and found the common thread: simple, clean, and mostly monochromatic. Since I value minimalism, I pushed myself with several iterations before settling on the one you see before you. The animations are subtle, and the content is spaced out and easy on the eyes. I wanted to bring a calm and reflective experience to anyone who visits my page.</p>
 										</Accordion.Body>
 								</Accordion.Item>
 							</Accordion>
