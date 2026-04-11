@@ -32,7 +32,7 @@ const ToggleMenu = ({ isOpen, toggle }) => {
 						</ul>
 
 						<div className="lets-chat">
-							<p className="chat-bubble">Fancy a chat?</p>
+							<p className="chat-bubble">Fancy a chat? :)</p>
 							<CopyEmail />
 						</div>
 					</nav>

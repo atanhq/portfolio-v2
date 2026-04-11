@@ -37,7 +37,7 @@
 	}
 
 	span {
-		padding-left: 0.5rem;
+		padding-left: 0.25rem;
 	}
 
 	img {
@@ -59,6 +59,15 @@
 
 .single-right h1 {
 	display: none;
+}
+
+.single-right a {
+	@include link;
+	font-weight: $bold;
+
+	img {
+		width: 1rem;
+	}
 }
 
 .single-blurb {
@@ -83,6 +92,10 @@
 .accordion-body {
 	background-color: $light;
 	color: $dark;
+
+	p {
+		margin-bottom: 1rem;
+	}
 }
 
 
@@ -118,6 +131,22 @@
 		font-size: 3rem;
 		line-height: 3rem;
 		margin: 1rem 0 2rem 0;
+	}
+
+	.single-right a {
+		@include underline;
+		padding-bottom: 0.5rem;
+		overflow: visible;
+
+		&::after {
+			clip-path: inset(0 100% 0 0);
+			transform: none;
+			transition: opacity 300ms, clip-path 300ms;
+		}
+
+		&:hover::after {
+			clip-path: inset(0 0% 0 0);
+		}
 	}
 
 	.single-blurb {

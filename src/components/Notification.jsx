@@ -19,7 +19,7 @@ const Notification = () => {
                 <strong className="me-auto">Nana</strong>
                 <small>just now</small>
               </Toast.Header>
-              <Toast.Body>Hey there! Thanks for stopping by. Fancy a chat? :)
+              <Toast.Body>Hey there, thanks for stopping by. Let's connect!
                 <div className="notification">
                   <CopyEmail />
                   <HashLink smooth to="/#projects" className="cta">View Projects</HashLink>

@@ -26,7 +26,7 @@ function ProjectPortfolio(){
 
 				<section className="single-grid">
 					<div className="single-left">
-						<h1>Portfolio</h1>
+						<h1>NANA! Portfolio</h1>
 
 						<div className="single-hero">
 							<img src={portfolio} alt="Portfolio project" />
@@ -55,10 +55,10 @@ function ProjectPortfolio(){
 					</div>
 
 					<div className="single-right">
-						<h1>Portfolio</h1>
+						<h1>NANA! Portfolio</h1>
 
 						<div className="single-blurb">
-							<p>Hi, I'm Nana! I'm a front-end web developer and designer based in Vancouver, BC.</p>
+							<p>A portfolio designed in Figma and built with React and Bootstrap.</p>
 						</div>
 
 						<div className="single-accordion">
