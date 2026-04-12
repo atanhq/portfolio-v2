@@ -1,19 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { appTitle } from '../globals/appTitle';
-
-import ToggleMenu from '../components/ToggleMenu'
 import Accordion from 'react-bootstrap/Accordion';
-
 import link from '../assets/link-out.svg';
 import github from '../assets/github.svg';
 import tofino from '../assets/tofino.png';
 
-function ProjectTofino(){
-
-	const [ isOpen, setIsOpen ] = useState(false)
-	const toggle = () => {
-		setIsOpen(!isOpen)
-	}
+function ProjectTofino({ isOpen }){
 
 	useEffect(() => {
 		document.title = `Tofino Time - ${appTitle}`;
@@ -21,8 +13,6 @@ function ProjectTofino(){
 
 	return (
 		<main>
-			<ToggleMenu isOpen={isOpen} toggle={toggle} />
-
 			<div className={`portfolio-wrapper ${isOpen ? "active" : "inactive"}`}>
 
 				<section className="single-grid">
@@ -35,11 +25,15 @@ function ProjectTofino(){
 
 						<div className="single-links">
 							<div className="view-link">
-								<a href="https://github.com/htpwebdesign/tofino-time-theme"><img src={github} alt="view github" /> <span>Github</span></a>
+								<a href="https://github.com/htpwebdesign/tofino-time-theme">
+								<img src={github} alt="view github" /> 
+								<span>Github</span></a>
 							</div>
 
 							<div className="view-link">
-								<a href="https://tofinotime.bcitwebdeveloper.ca/"><img src={link} alt="view live" /> <span>Live</span></a>
+								<a href="https://tofinotime.bcitwebdeveloper.ca/">
+								<img src={link} alt="view live" /> 
+								<span>Live</span></a>
 							</div>
 						</div>
 

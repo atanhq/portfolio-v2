@@ -3,41 +3,39 @@ import close from "../assets/close.svg";
 import { HashLink } from "react-router-hash-link";
 import CopyEmail from './CopyEmail';
 
-import { TypeAnimation } from 'react-type-animation';
-
 const ToggleMenu = ({ isOpen, toggle }) => {
 
-    useEffect(() => {
-        document.body.classList.toggle('menu-open', isOpen);
-    }, [isOpen]);
+	useEffect(() => {
+		document.body.classList.toggle('menu-open', isOpen);
+	}, [isOpen]);
 
-    return (
-        <>
-					<div className="menu">
-						<button
-								className="menu-title" 
-								onClick={toggle}>
-						{!isOpen ? "Menu" : <img src={close} alt="close menu" className="close-svg" />}
-						</button>
-					</div>
+	return (
+		<>
+			<div className="menu">
+				<button
+					className="menu-title" 
+					onClick={toggle}>
+					{!isOpen ? "Menu" : <img src={close} alt="close menu" className="close-svg" />}
+				</button>
+			</div>
 
-					<nav className={`menu-container ${isOpen ? "active" : "inactive"}`}>
-						<div className="space"></div>
+			<nav className={`menu-container ${isOpen ? "active" : "inactive"}`}>
+				<div className="space"></div>
 
-						<ul>
-							<li><a href="/">Home</a></li>
-							<li><HashLink smooth to="/#projects">Projects</HashLink></li>
-							<li><a href="/about">About</a></li>
-							<li><a href="https://github.com/atanhq">Github</a></li>
-						</ul>
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><HashLink smooth to="/#projects">Projects</HashLink></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="https://github.com/atanhq">Github</a></li>
+				</ul>
 
-						<div className="lets-chat">
-							<p className="chat-bubble">Fancy a chat? :)</p>
-							<CopyEmail />
-						</div>
-					</nav>
-        </>
-    )
+				<div className="lets-chat">
+					<p className="chat-bubble">Fancy a chat? :)</p>
+					<CopyEmail />
+				</div>
+			</nav>
+		</>
+	)
 }
 
 export default ToggleMenu

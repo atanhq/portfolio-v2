@@ -1,19 +1,11 @@
 import { useEffect } from 'react';
 import { appTitle } from '../globals/appTitle';
-
 import ProjectsAll from '../components/ProjectsAll'
 import Notification from '../components/Notification'
 import Copyright from '../components/Copyright'
-
 import portrait from '../assets/placeholder-home.png'
 
 function PageHome({ isOpen }){
-
-	// set state for nav toggle, passes to ToggleMenu.jsx
-	// const [ isOpen, setIsOpen ] = useState(false)
-	// const toggle = () => {
-	// 	setIsOpen(!isOpen)
-	// }
 
 	useEffect(() => {
 		document.title = `${appTitle}`;
@@ -21,8 +13,6 @@ function PageHome({ isOpen }){
 
 	return (
 		<main>
-			{/* <ToggleMenu isOpen={isOpen} toggle={toggle} /> */}
-
 			<div className={`portfolio-wrapper ${isOpen ? "active" : "inactive"}`}>
 
 				<Notification />

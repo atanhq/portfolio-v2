@@ -1,20 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { appTitle } from '../globals/appTitle';
 import { Link } from "react-router-dom";
-
-import ToggleMenu from '../components/ToggleMenu'
 import Accordion from 'react-bootstrap/Accordion';
-
 import link from '../assets/link-out.svg';
 import github from '../assets/github.svg';
 import flixi from '../assets/flixi.png';
 
-function ProjectFlixi(){
-
-	const [ isOpen, setIsOpen ] = useState(false)
-	const toggle = () => {
-		setIsOpen(!isOpen)
-	}
+function ProjectFlixi({ isOpen }){
 
 	useEffect(() => {
 		document.title = `Flixi Movie Database - ${appTitle}`;
@@ -22,8 +14,6 @@ function ProjectFlixi(){
 
 	return (
 		<main>
-			<ToggleMenu isOpen={isOpen} toggle={toggle} />
-
 			<div className={`portfolio-wrapper ${isOpen ? "active" : "inactive"}`}>
 
 				<section className="single-grid">
@@ -36,11 +26,15 @@ function ProjectFlixi(){
 
 						<div className="single-links">
 							<div className="view-link">
-								<a href="https://github.com/atanhq/fwdp-3400-flixi"><img src={github} alt="view github" /> <span>Github</span></a>
+								<a href="https://github.com/atanhq/fwdp-3400-flixi">
+								<img src={github} alt="view github" /> 
+								<span>Github</span></a>
 							</div>
 
 							<div className="view-link">
-								<a href="https://nanatan.com/flixi/"><img src={link} alt="view live" /> <span>Live</span></a>
+								<a href="https://nanatan.com/flixi/">
+								<img src={link} alt="view live" /> 
+								<span>Live</span></a>
 							</div>
 						</div>
 

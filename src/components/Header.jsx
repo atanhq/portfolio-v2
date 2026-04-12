@@ -4,17 +4,17 @@ import ToggleMenu from '../components/ToggleMenu'
 
 const Header = ({ isOpen, toggle }) => {
 
-    return (
-      <>
-        <header>
-          <div className="logo">
-            <Link to="/"><img src={logo} alt="logo" /></Link>
-          </div>
+  return (
+    <>
+      <header>
+        <div className="logo">
+          <Link to="/"><img src={logo} alt="logo" /></Link>
+        </div>
 
-          <ToggleMenu isOpen={isOpen} toggle={toggle} />
-        </header>
-      </>
-    )
+        <ToggleMenu isOpen={isOpen} toggle={toggle} />
+      </header>
+    </>
+  )
 }
 
 export default Header

@@ -1,20 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { appTitle } from '../globals/appTitle';
 import { Link } from "react-router-dom";
-
-import ToggleMenu from '../components/ToggleMenu'
 import Accordion from 'react-bootstrap/Accordion';
-
 import link from '../assets/link-out.svg';
 import github from '../assets/github.svg';
 import escape from '../assets/escape.png';
 
-function ProjectEscape(){
-
-    const [ isOpen, setIsOpen ] = useState(false)
-    const toggle = () => {
-			setIsOpen(!isOpen)
-    }
+function ProjectEscape({ isOpen }){
 
 	useEffect(() => {
 		document.title = `Escape the Demon Lair - ${appTitle}`;
@@ -22,10 +14,7 @@ function ProjectEscape(){
 
 	return (
 		<main>
-			<ToggleMenu isOpen={isOpen} toggle={toggle} />
-
 			<div className={`portfolio-wrapper ${isOpen ? "active" : "inactive"}`}>
-
 				<section className="single-grid">
 					<div className="single-left">
 						<h1>Escape the Demon Lair</h1>

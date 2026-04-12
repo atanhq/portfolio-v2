@@ -20,12 +20,12 @@ function AppRouter() {
     <BrowserRouter>
       <Header isOpen={isOpen} toggle={toggle} />
         <Routes>
-          <Route path="/" exact element={<PageHome />} />
-          <Route path="/about" exact element={<PageAbout />} />
-          <Route path="/flixi-movie-database" exact element={<ProjectFlixi />} />
-          <Route path="/tofino-time" exact element={<ProjectTofino />} />
-          <Route path="/escape-the-lair" exact element={<ProjectEscape />} />
-          <Route path="/portfolio" exact element={<ProjectPortfolio />} />
+          <Route path="/" exact element={<PageHome isOpen={isOpen} />} />
+          <Route path="/about" exact element={<PageAbout isOpen={isOpen} />} />
+          <Route path="/flixi-movie-database" exact element={<ProjectFlixi isOpen={isOpen} />} />
+          <Route path="/tofino-time" exact element={<ProjectTofino isOpen={isOpen} />} />
+          <Route path="/escape-the-lair" exact element={<ProjectEscape isOpen={isOpen} />} />
+          <Route path="/portfolio" exact element={<ProjectPortfolio isOpen={isOpen} />} />
         </Routes>
     </BrowserRouter>
   );
