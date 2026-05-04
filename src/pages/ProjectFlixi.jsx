@@ -26,13 +26,13 @@ function ProjectFlixi({ isOpen }){
 
 						<div className="single-links">
 							<div className="view-link">
-								<a href="https://github.com/atanhq/fwdp-3400-flixi">
+								<a href="https://github.com/atanhq/fwdp-3400-flixi" target="_blank">
 								<img src={github} alt="view github" /> 
 								<span>Github</span></a>
 							</div>
 
 							<div className="view-link">
-								<a href="https://nanatan.com/flixi/">
+								<a href="https://nanatan.com/flixi/" target="_blank">
 								<img src={link} alt="view live" /> 
 								<span>Live</span></a>
 							</div>

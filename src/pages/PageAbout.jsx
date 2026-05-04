@@ -18,9 +18,9 @@ return (
 				I'm Nana.</h1>
 
 				<div className="about-details">
-					<p>I'm a Front-End Developer and UX/UI Designer based in Vancouver.</p>
+					<p>I'm a Front-End Developer and UX/UI Designer based in Vancouver, BC.</p>
 
-					<p>To me, development is a lot like storytelling where every colour, every piece of content, and every line of code builds a unique experience for the end user.</p>
+					<p>To me, development is a lot like storytelling where every colour, every piece of content, and every line of code build a unique experience for the end user.</p>
 					
 					<p>Along with my Front-End Web Development certificate from BCIT, I hold a BA in Business Management and Psychology with a specialization in positive psychology - a subfield that focuses on human satisfaction and accomplishment. I take this people-first, interaction-oriented approach when conceptualizing my designs.</p>
 				</div>
@@ -53,7 +53,7 @@ return (
 						<Accordion.Item eventKey="0">
 							<Accordion.Header>What are your hobbies?</Accordion.Header>
 							<Accordion.Body>
-								<p>Writing! I've been telling stories for as long as I can remember. I also love reading. Some of my favourite authors are Uketsu and Gillian Flynn.</p>
+								<p>Writing! I've been telling stories for as long as I can remember. I also love reading. Some of my favourite authors are Uketsu, Gillian Flynn, and R.F. Kuang.</p>
 							</Accordion.Body>
 						</Accordion.Item>
 

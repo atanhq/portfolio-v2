@@ -26,7 +26,7 @@ const ToggleMenu = ({ isOpen, toggle }) => {
 					<li><a href="/">Home</a></li>
 					<li><HashLink smooth to="/#projects">Projects</HashLink></li>
 					<li><a href="/about">About</a></li>
-					<li><a href="https://github.com/atanhq">Github</a></li>
+					<li><a href="https://github.com/atanhq" target="_blank">Github</a></li>
 				</ul>
 
 				<div className="lets-chat">

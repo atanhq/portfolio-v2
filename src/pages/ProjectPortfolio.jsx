@@ -26,7 +26,7 @@ function ProjectPortfolio({ isOpen }){
 
 						<div className="single-links">
 							<div className="view-link">
-								<a href="https://github.com/atanhq/portfolio-v2">
+								<a href="https://github.com/atanhq/portfolio-v2" target="_blank">
 								<img src={github} alt="view github" /> 
 								<span>Github</span></a>
 							</div>
@@ -62,7 +62,7 @@ function ProjectPortfolio({ isOpen }){
 								<Accordion.Item eventKey="0">
 									<Accordion.Header><h2>The Vision</h2></Accordion.Header>
 										<Accordion.Body>
-											<p><em>Show your personality</em>. That was our directive for the portfolio project. For weeks, I pondered what that meant for me and how I could translate it into a design. I looked at my workspace, the websites I admired, and the graphics that caught my eye, and found a common thread between them: simple, clean, and mostly monochromatic. Knowing that my portfolio would be stripped of colour, I pushed myself with its design, so even though it appears minimalistic, it still has personality.</p>
+											<p><em>Show us your personality</em>. That was our directive for the portfolio project. For weeks, I pondered what that meant for me and how I could translate it into a design. I looked at my workspace, the websites I admired, and the graphics that caught my eye, and found a common thread between them: simple, clean, and mostly monochromatic. Knowing that my portfolio would be stripped of colour, I pushed myself with its design, so even though it appears minimalistic, it still has personality.</p>
 										</Accordion.Body>
 								</Accordion.Item>
 
@@ -73,7 +73,7 @@ function ProjectPortfolio({ isOpen }){
 
 											<p>When developing the desktop home page, I applied what I learned in my design and UX/UI courses and considered how I wanted to guide the user's eye. Since we tend to read left to right, I placed my logo in the upper left, then drew attention to the right with a notification that slides in a second later. For the mobile navigation, I chose to move it to the bottom so it's easier for a phone user to tap on it.</p>
 
-											<p>I carried what I'd learned into my Capstone project, <Link to="/tofino-time"><img src={link} alt="view live" /> Tofino Time</Link> - coming soon!</p>
+											<p>I carried what I'd learned into my Capstone project, <Link to="/tofino-time"><img src={link} alt="view live" /> Tofino Time</Link>.</p>
 										</Accordion.Body>
 								</Accordion.Item>
 							</Accordion>
