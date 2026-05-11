@@ -11,7 +11,7 @@
 .home-tagline {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: 60% 40% 40%;
+	grid-template-rows: 40% 40% 40%;
 
 	// name
 	span:nth-child(1) {
@@ -43,6 +43,26 @@
 	}
 }
 
+.scroll-down {
+	grid-column: span 2 / span 2;
+	width: 1.5rem;
+	align-self: center;
+	justify-self: center;
+	animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+	0%, 100% {
+		transform: rotate(90deg) translateX(0);
+		filter: drop-shadow(-5px 0 0px $accent);
+
+	}
+	50% {
+		transform: rotate(90deg) translateX(-1rem);
+		filter: drop-shadow(0px 0 0 $light);
+	}
+}
+
 .home-portrait {
 	max-width: 25rem;
 }
@@ -61,6 +81,8 @@
 	}
 
 	.home-tagline {
+		grid-template-rows: 55% 40% 40%;
+
 		// name
 		span:nth-child(1) {
 			font-size: clamp(15rem, 30vw, 30rem);
@@ -81,12 +103,26 @@
 		}
 	}
 
+	.scroll-down {
+		width: 2rem;
+		align-self: end;
+	}
+
+	.scroll-down img {
+		transition: 0.3s ease;
+
+		&:hover {
+			filter: drop-shadow(0 0 3px $accent);
+		}
+	}
+
 	.home-portrait {
 		position: absolute;
 		left: 50%;
 		transform: translate(-55%);
 		max-width: none;
-		width: clamp(15rem, 40vw, 40rem);
+		width: clamp(15rem, 38vw, 38rem);
+		margin-bottom: 1rem;
 	}
 
 }
