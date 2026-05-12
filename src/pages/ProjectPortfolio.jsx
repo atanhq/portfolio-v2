@@ -5,6 +5,7 @@ import Accordion from 'react-bootstrap/Accordion';
 import link from '../assets/link-out.svg';
 import github from '../assets/github.svg';
 import portfolio from '../assets/portfolio.png';
+import arrow from '../assets/arrow.svg';
 
 function ProjectPortfolio({ isOpen }){
 
@@ -77,6 +78,9 @@ function ProjectPortfolio({ isOpen }){
 										</Accordion.Body>
 								</Accordion.Item>
 							</Accordion>
+						</div>
+						<div className="view-next">
+							<Link to="/tofino-time">View Next Project <img src={arrow} alt="arrow pointing right" aria-label="view project tofino time" className="view-next-arrow"/></Link>
 						</div>
 					</div>
 				</section>

@@ -5,6 +5,7 @@ import Accordion from 'react-bootstrap/Accordion';
 import link from '../assets/link-out.svg';
 import github from '../assets/github.svg';
 import escape from '../assets/escape.png';
+import arrow from '../assets/arrow.svg';
 
 function ProjectEscape({ isOpen }){
 
@@ -78,6 +79,10 @@ function ProjectEscape({ isOpen }){
 										</Accordion.Body>
 								</Accordion.Item>
 							</Accordion>
+						</div>
+
+						<div className="view-next">
+							<Link to="/flixi-movie-database">View Next Project <img src={arrow} alt="arrow pointing right" aria-label="view project flixi" className="view-next-arrow"/></Link>
 						</div>
 					</div>
 				</section>

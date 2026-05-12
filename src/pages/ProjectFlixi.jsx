@@ -5,6 +5,7 @@ import Accordion from 'react-bootstrap/Accordion';
 import link from '../assets/link-out.svg';
 import github from '../assets/github.svg';
 import flixi from '../assets/flixi.png';
+import arrow from '../assets/arrow.svg';
 
 function ProjectFlixi({ isOpen }){
 
@@ -79,6 +80,10 @@ function ProjectFlixi({ isOpen }){
 										</Accordion.Body>
 								</Accordion.Item>
 							</Accordion>
+						</div>
+
+						<div className="view-next">
+							<Link to="/portfolio">View Next Project <img src={arrow} alt="arrow pointing right" aria-label="view project portfolio" className="view-next-arrow"/></Link>
 						</div>
 					</div>
 				</section>

@@ -1,8 +1,10 @@
 import { useEffect } from 'react';
 import { appTitle } from '../globals/appTitle';
+import { Link } from "react-router-dom";
 import Accordion from 'react-bootstrap/Accordion';
 import link from '../assets/link-out.svg';
 import tofino from '../assets/tofino.png';
+import arrow from '../assets/arrow.svg';
 
 function ProjectTofino({ isOpen }){
 
@@ -73,6 +75,9 @@ function ProjectTofino({ isOpen }){
 										</Accordion.Body>
 								</Accordion.Item>
 							</Accordion>
+						</div>
+						<div className="view-next">
+							<Link to="/escape-the-lair">View Next Project <img src={arrow} alt="arrow pointing right" aria-label="view project escape the lair" className="view-next-arrow"/></Link>
 						</div>
 					</div>
 				</section>
