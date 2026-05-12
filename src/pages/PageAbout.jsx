@@ -31,20 +31,20 @@ return (
 					<h2 className="toolbox-title">Toolbox</h2>
 
 					<div className="tools">
-						<i class="devicon-react-original"></i>
-						<i class="devicon-javascript-plain"></i>
-						<i class="devicon-php-plain"></i>
-						<i class="devicon-sass-original"></i>
+						<i class="devicon-react-original" aria-label="react"></i>
+						<i class="devicon-javascript-plain" aria-label="javascript"></i>
+						<i class="devicon-php-plain" aria-label="php"></i>
+						<i class="devicon-sass-original" aria-label="sass"></i>
 						<br />
-						<i class="devicon-bootstrap-plain"></i>
-						<i class="devicon-wordpress-plain"></i>
-						<i class="devicon-woocommerce-plain"></i>
-						<i class="devicon-css3-plain"></i>
+						<i class="devicon-bootstrap-plain" aria-label="bootstrap"></i>
+						<i class="devicon-wordpress-plain" aria-label="wordpress"></i>
+						<i class="devicon-woocommerce-plain" aria-label="woocommerce"></i>
+						<i class="devicon-css3-plain" aria-label="css"></i>
 						<br />
-						<i class="devicon-figma-plain"></i>
-						<i class="devicon-photoshop-plain"></i>
-						<i class="devicon-illustrator-plain"></i>
-						<i class="devicon-xd-plain"></i>
+						<i class="devicon-figma-plain" aria-label="figma"></i>
+						<i class="devicon-photoshop-plain" aria-label="photoshop"></i>
+						<i class="devicon-illustrator-plain" aria-label="illustrator"></i>
+						<i class="devicon-xd-plain" aria-label="adobe xd"></i>
 					</div>
 				</div>
 

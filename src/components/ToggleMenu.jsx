@@ -15,7 +15,7 @@ const ToggleMenu = ({ isOpen, toggle }) => {
 				<button
 					className="menu-title" 
 					onClick={toggle}>
-					{!isOpen ? "Menu" : <img src={close} alt="close menu" className="close-svg" />}
+					{!isOpen ? "Menu" : <img src={close} alt="close menu" aria-label="close menu" className="close-svg" />}
 				</button>
 			</div>
 

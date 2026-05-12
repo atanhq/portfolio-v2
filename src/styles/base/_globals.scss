@@ -56,6 +56,11 @@ h3 {
 		bottom: auto;
 		top: 0;
 		z-index: 999;
+		transition: 0.3s ease-in-out;
+
+		&:hover {
+			transform: scale(1.1);
+		}
 	}
 
 }

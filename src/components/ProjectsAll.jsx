@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import arrow from '../assets/arrow.svg';
 
 const ProjectsAll = () => {
@@ -8,63 +8,63 @@ const ProjectsAll = () => {
 			<section className="all-list">
 				<h2 className="all-heading">Projects</h2>
 
-					<Link to="/escape-the-lair">
-						<article className="all-item">
+					<a href="/escape-the-lair">
+						<article className="all-item featured">
 							<div className="number">01</div>
 							<h3 className="all-title">Escape!</h3>
 							<div className="stacks">
-								<i className="devicon-javascript-plain"></i>
-								<i className="devicon-css3-plain"></i>
+								<i className="devicon-javascript-plain" aria-label="javascript"></i>
+								<i className="devicon-css3-plain" aria-label="css"></i>
 							</div>
 							<div className="arrow">
-								<img src={arrow} alt="view project" />
+								<img src={arrow} alt="arrow pointing right" aria-label="view project escape the lair" />
 							</div>
 						</article>
-					</Link>
+					</a>
 
-					<Link to="/flixi-movie-database">
+					<a href="/flixi-movie-database">
 						<article className="all-item">
 							<div className="number">02</div>
 							<h3 className="all-title">Flixi Movie</h3>
 							<div className="stacks">
-								<i className="devicon-react-original"></i>
-								<i className="devicon-xd-plain"></i>
+								<i className="devicon-react-original" aria-label="react"></i>
+								<i className="devicon-xd-plain" aria-label="adobe XD"></i>
 							</div>
 							<div className="arrow">
-								<img src={arrow} alt="view project" />
+								<img src={arrow} alt="arrow pointing right" aria-label="view project flixi movie database" />
 							</div>
 						</article>
-					</Link>
+					</a>
 
-					<Link to="/portfolio">
+					<a href="/portfolio">
 						<article className="all-item">
 							<div className="number">03</div>
 							<h3 className="all-title">Portfolio</h3>
 							<div className="stacks">
-								<i className="devicon-react-original"></i>
-								<i className="devicon-bootstrap-plain"></i>
-								<i className="devicon-sass-original"></i>
+								<i className="devicon-react-original" aria-label="react"></i>
+								<i className="devicon-bootstrap-plain" aria-label="bootstrap"></i>
+								<i className="devicon-sass-original" aria-label="sass"></i>
 							</div>
 							<div className="arrow">
-								<img src={arrow} alt="view project" />
+								<img src={arrow} alt="arrow pointing right" aria-label="view project portfolio" />
 							</div>
 						</article>
-					</Link>
+					</a>
 
-					<Link to="/tofino-time">
+					<a href="/tofino-time">
 						<article className="all-item">
 							<div className="number">04</div>
 							<h3 className="all-title">Tofino Time</h3>
 							<div className="stacks">
-								<i className="devicon-woocommerce-plain"></i>
-								<i className="devicon-php-plain"></i>
-								<i className="devicon-figma-plain"></i>
+								<i className="devicon-woocommerce-plain" aria-label="woocommerce"></i>
+								<i className="devicon-php-plain" aria-label="php"></i>
+								<i className="devicon-figma-plain" aria-label="figma"></i>
 							</div>
 							<div className="arrow">
-								<img src={arrow} alt="view project" />
+								<img src={arrow} alt="arrow pointing right" aria-label="view project tofino time" />
 							</div>
 						</article>
-					</Link>
+					</a>
 
 			</section>
 		</>

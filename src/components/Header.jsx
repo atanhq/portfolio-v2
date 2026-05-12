@@ -8,7 +8,7 @@ const Header = ({ isOpen, toggle }) => {
     <>
       <header>
         <div className="logo">
-          <Link to="/"><img src={logo} alt="logo" /></Link>
+          <Link to="/"><img src={logo} alt="logo" aria-label="return to home page"/></Link>
         </div>
 
         <ToggleMenu isOpen={isOpen} toggle={toggle} />
