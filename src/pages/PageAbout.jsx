@@ -1,6 +1,9 @@
 import { useEffect } from 'react';
 import { appTitle } from '../globals/appTitle';
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import Accordion from 'react-bootstrap/Accordion';
+import arrow from '../assets/arrow.svg';
 
 function PageAbout({ isOpen }){
 
@@ -23,6 +26,10 @@ return (
 					<p>To me, development is a lot like storytelling where every colour, every piece of content, and every line of code build a unique experience for the end user.</p>
 					
 					<p>Along with my Front-End Web Development certificate from BCIT, I hold a BA in Business Management and Psychology with a specialization in positive psychology - a subfield that focuses on human satisfaction and accomplishment. I take this people-first, interaction-oriented approach when conceptualizing my designs.</p>
+
+					<div className="view-next about-view">
+						<HashLink smooth to="/#projects">View My Projects <img src={arrow} alt="arrow pointing right" aria-label="view my projects" className="view-next-arrow"/></HashLink>
+					</div>
 				</div>
 			</div>
 
@@ -49,7 +56,7 @@ return (
 				</div>
 
 				<div className="fun-facts">
-					<Accordion>
+					<Accordion defaultActiveKey="0">
 						<Accordion.Item eventKey="0">
 							<Accordion.Header>What are your hobbies?</Accordion.Header>
 							<Accordion.Body>
