@@ -3,7 +3,7 @@
 
 // overwrite bootstrap styles
 .toast-body {
-	font-size: 0.85rem;
+	font-size: 0.9rem;
 }
 
 .toast {
@@ -25,6 +25,7 @@
 	@include button;
 	margin-top: 0.75rem;
 	width: 47%;
+	font-size: 0.9rem;
 }
 
 .toast-slide {

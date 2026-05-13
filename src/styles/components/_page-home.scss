@@ -98,7 +98,7 @@
 		transition: 0.3s ease;
 
 		&:hover {
-			filter: drop-shadow(0 0 3px $accent);
+			scale: 1.25;
 		}
 	}
 
