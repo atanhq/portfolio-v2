@@ -4,8 +4,7 @@ import { HashLink } from "react-router-hash-link";
 import ProjectsAll from '../components/ProjectsAll'
 import Notification from '../components/Notification'
 import Copyright from '../components/Copyright'
-import portrait from '../assets/placeholder-home.png'
-import arrow from '../assets/arrow.svg';
+import downarrow from '../assets/down-arrow.svg';
 
 function PageHome({ isOpen }){
 
@@ -20,15 +19,15 @@ function PageHome({ isOpen }){
 				<Notification />
 
 				<section className="home-landing">
-					<div className="home-tagline">
-						<span>Nana</span>
-						<span>Developer</span>
-						<span>UX/UI Designer</span>
+					<div className="home-title">
+						<span className="home-name">N<em>a</em>n<em>a</em></span>
+						<span className="home-tagline">Web Developer <strong>&</strong> UX Designer</span>
+						<span>.</span>
 
-						<HashLink smooth to="/#projects" className="scroll-down"><img src={arrow} alt="arrow pointing down" aria-label="skip to content"/></HashLink>
+						<div className="scroll-down">
+							<HashLink smooth to="/#projects"><img src={downarrow} alt="arrow pointing down" aria-label="skip to content" /></HashLink>
+						</div>
 					</div>
-
-					<img src={portrait} alt="" className="home-portrait" />
 				</section>
 
 				<section id="projects">

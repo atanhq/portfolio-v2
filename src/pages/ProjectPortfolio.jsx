@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Accordion from 'react-bootstrap/Accordion';
 import link from '../assets/link-out.svg';
 import github from '../assets/github.svg';
-import portfolio from '../assets/portfolio.png';
+import portfolio from '../assets/portf.png';
 import arrow from '../assets/arrow.svg';
 
 function ProjectPortfolio({ isOpen }){

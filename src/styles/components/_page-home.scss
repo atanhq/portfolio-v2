@@ -8,60 +8,53 @@
 	justify-content: center;
 }
 
+.home-name {
+	font-size: clamp(8rem, 30vw, 10rem);
+	line-height: 0.75;
+	text-transform: uppercase;
+	font-weight: $bold;
+	letter-spacing: -0.5rem;
+	font-family: $secondary;
+	display: block;
+	padding-right: 0.75rem;
+}
+
 .home-tagline {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: 40% 40% 40%;
+	font-size: 1.25rem;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: end;
+	align-items: baseline;
 
-	// name
-	span:nth-child(1) {
-		font-size: clamp(8rem, 30vw, 10rem);
-		line-height: 1;
-		padding-right: 1.2rem;
-		grid-column: span 2 / span 2;
-		text-transform: uppercase;
-		font-weight: $bold;
-		letter-spacing: -0.5rem;
-	}
-
-	// taglines
-	span:nth-child(2),
-	span:nth-child(3) {
-		grid-row-start: 2;
-		font-size: 1.25rem;
-		font-weight: $bold;
-		text-transform: uppercase;
-		align-self: end;
-	}
-
-	span:nth-child(2) {
-		justify-self: start;
-	}
-
-	span:nth-child(3) {
-		justify-self: end;
+	strong {
+		margin: 0 0.25rem;
 	}
 }
 
+.home-tagline::after {
+	content: ".";
+	font-size: 4rem;
+	line-height: 0;
+	margin-left: 0.25rem;
+}
+
 .scroll-down {
-	grid-column: span 2 / span 2;
-	width: 1.5rem;
-	align-self: center;
-	justify-self: center;
+	width: 1.75rem;
 	animation: bounce 2s infinite;
+	position: absolute;
+	bottom: 3rem;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
 
 @keyframes bounce {
 	0%, 100% {
-		transform: rotate(90deg) translateX(0);
+		transform: translateY(0);
 	}
 	50% {
-		transform: rotate(90deg) translateX(-1rem);
+		transform: translateY(-1rem);
 	}
-}
-
-.home-portrait {
-	max-width: 25rem;
 }
 
 
@@ -77,27 +70,23 @@
 		margin-top: 1rem;
 	}
 
+	.home-name {
+		font-size: clamp(15rem, 20vw, 20rem);
+		line-height: 0.8;
+		padding-right: 0;
+	}
+
 	.home-tagline {
-		grid-template-rows: 55% 40% 40%;
+		font-size: 2rem;
 
-		// name
-		span:nth-child(1) {
-			font-size: clamp(15rem, 30vw, 30rem);
-			line-height: 0.8;
+		strong {
+			margin: 0 0.5rem;
 		}
+	}
 
-		// taglines
-		span:nth-child(2) {
-			font-size: 2rem;
-			justify-self: center;
-			padding-right: 7rem;
-		}
-
-		span:nth-child(3) {
-			font-size: 2rem;
-			justify-self: center;
-			padding-left: 7rem;
-		}
+	.home-tagline::after {
+		font-size: 6rem;
+		margin-left: 0.5rem;
 	}
 
 	.scroll-down {
@@ -111,15 +100,6 @@
 		&:hover {
 			filter: drop-shadow(0 0 3px $accent);
 		}
-	}
-
-	.home-portrait {
-		position: absolute;
-		left: 50%;
-		transform: translate(-55%);
-		max-width: none;
-		width: clamp(15rem, 38vw, 38rem);
-		margin-bottom: 1rem;
 	}
 
 }
