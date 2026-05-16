@@ -3,8 +3,9 @@ import { appTitle } from '../globals/appTitle';
 import { HashLink } from "react-router-hash-link";
 import ProjectsAll from '../components/ProjectsAll'
 import Notification from '../components/Notification'
-import Copyright from '../components/Copyright'
+// import Copyright from '../components/Copyright'
 import downarrow from '../assets/down-arrow.svg';
+import Footer from '../components/Footer'
 
 function PageHome({ isOpen }){
 
@@ -33,7 +34,7 @@ function PageHome({ isOpen }){
 					<ProjectsAll />
 				</section>
 
-				<Copyright />
+				<Footer />
 			</div>
 		</main>
 	);

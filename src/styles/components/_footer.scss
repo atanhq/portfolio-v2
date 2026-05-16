@@ -1,0 +1,13 @@
+@use '../base/settings' as *;
+
+.copyright-date {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1rem;
+  color: $light;
+}
+
+footer {
+	background-color: $dark;
+  height: 10rem;
+}
