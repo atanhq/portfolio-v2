@@ -3,6 +3,7 @@ import Toast from 'react-bootstrap/Toast';
 import { ToastContainer } from 'react-bootstrap';
 import { HashLink } from "react-router-hash-link";
 import CopyEmail from './CopyEmail';
+import logo from '../../public/favicon-96x96.png';
 
 const Notification = () => {
 
@@ -16,12 +17,12 @@ const Notification = () => {
             <Toast show={showA} onClose={toggleShowA}>
 
               <Toast.Header>
-                <img src="https://placehold.co/20x20/000000/FFF" className="rounded me-2" alt="" />
+                <img src={logo} className="rounded me-2" alt="" />
                 <strong className="me-auto">Nana</strong>
                 <small>just now</small>
               </Toast.Header>
 
-              <Toast.Body>Hey there, thanks for stopping by. Let's connect!
+              <Toast.Body>Hey there, thanks for stopping by. Let's chat!
                 <div className="notification">
                   <CopyEmail />
                   <HashLink smooth to="/#projects" className="cta">View Projects</HashLink>

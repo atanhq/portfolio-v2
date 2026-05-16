@@ -22,7 +22,6 @@ function PageHome({ isOpen }){
 					<div className="home-title">
 						<span className="home-name">N<em>a</em>n<em>a</em></span>
 						<span className="home-tagline">Web Developer <strong>&</strong> UX Designer</span>
-						<span>.</span>
 
 						<div className="scroll-down">
 							<HashLink smooth to="/#projects"><img src={downarrow} alt="arrow pointing down" aria-label="skip to content" /></HashLink>

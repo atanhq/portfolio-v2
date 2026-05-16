@@ -13,7 +13,7 @@ const ToggleMenu = ({ isOpen, toggle }) => {
 		<>
 			<div className="menu">
 				<button
-					className="menu-title" 
+					className={`menu-title ${isOpen ? "menu-open" : ""}`}
 					onClick={toggle}>
 					{!isOpen ? "Menu" : <img src={close} alt="close menu" aria-label="close menu" className="close-svg" />}
 				</button>

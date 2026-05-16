@@ -3,11 +3,15 @@
 
 // overwrite bootstrap styles
 .toast-body {
-	font-size: 0.9rem;
+	font-size: 1rem;
 }
 
 .toast {
 	--bs-toast-bg: rgba(var(--bs-body-bg-rgb), 0.95);
+}
+
+.rounded.me-2 {
+	width: 20px;
 }
 
 // custom styles
@@ -25,7 +29,7 @@
 	@include button;
 	margin-top: 0.75rem;
 	width: 47%;
-	font-size: 0.9rem;
+	font-size: 1rem;
 }
 
 .toast-slide {

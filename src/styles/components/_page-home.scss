@@ -35,17 +35,16 @@
 	content: ".";
 	font-size: 4rem;
 	line-height: 0;
-	margin-left: 0.25rem;
+	margin-left: 0.15rem;
 }
 
 .scroll-down {
 	width: 1.75rem;
 	animation: bounce 2s infinite;
 	position: absolute;
-	bottom: 3rem;
 	left: 0;
 	right: 0;
-	margin: auto;
+	margin: 11rem auto 0 auto;
 }
 
 @keyframes bounce {
@@ -91,7 +90,8 @@
 
 	.scroll-down {
 		width: 2rem;
-		align-self: end;
+		bottom: 3rem;
+		margin: 0 auto;
 	}
 
 	.scroll-down img {
