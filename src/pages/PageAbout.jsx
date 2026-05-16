@@ -21,7 +21,7 @@ return (
 				I'm Nana.</h1>
 
 				<div className="about-details">
-					<p>I'm a Front-End Developer and UX/UI Designer based in Vancouver, BC.</p>
+					<p>I'm a Web Developer and UX Designer based in Vancouver, BC.</p>
 
 					<p>To me, development is a lot like storytelling where every colour, every piece of content, and every line of code build a unique experience for the end user.</p>
 					

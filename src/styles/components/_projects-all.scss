@@ -65,6 +65,31 @@
 	width: 1.75rem;
 }
 
+	.all-item:hover {
+		box-shadow: inset 0px 8rem $dark;
+		color: $light;
+
+		.number {
+			color: $light;
+			-webkit-text-stroke-color: $light;
+		}
+
+		// change colour of svg
+		.arrow {
+			animation: bouncing 2s infinite;
+		}
+
+		@keyframes bouncing {
+			0%, 100% {
+				transform: translateX(0);
+				@include light-svg;
+			}
+			50% {
+				transform: translateX(1rem);
+			}
+		}
+	}
+
 
 /* ---------- desktop styling ---------- */
 
@@ -95,31 +120,6 @@
 	.all-item:hover::before {
 		opacity: 1;
 		height: 100%;
-	}
-
-	.all-item:hover {
-		box-shadow: inset 0px 8rem $dark;
-		color: $light;
-
-		.number {
-			color: $light;
-			-webkit-text-stroke-color: $light;
-		}
-
-		// change colour of svg
-		.arrow {
-			animation: bouncing 2s infinite;
-		}
-
-		@keyframes bouncing {
-			0%, 100% {
-				transform: translateX(0);
-				@include light-svg;
-			}
-			50% {
-				transform: translateX(1rem);
-			}
-		}
 	}
 
 	.number {

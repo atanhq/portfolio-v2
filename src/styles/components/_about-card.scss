@@ -1,0 +1,68 @@
+@use '../base/settings' as *;
+
+.about-card {
+  margin: 10rem auto;
+  width: 20rem;
+  outline: 2px solid $dark;
+  border-radius: 5px;
+  box-shadow: 6px 6px $dark;
+}
+
+.card-heading {
+  padding: 0.25rem 0.75rem;
+  background-color: $dark;
+  color: $light;
+}
+
+.card-portrait {
+  padding: 2rem;
+  display: grid;
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.card-image {
+  width: 5rem;
+  border-radius: 50%;
+  outline: 1px solid $dark;
+  box-shadow: 3px 3px $dark;
+}
+
+.card-blurb {
+  text-align: center;
+}
+
+.view-next.about-view.footer-view {
+  padding: 0 0.5rem 0rem 0;
+}
+
+
+
+/* ---------- desktop styling ---------- */
+
+@media (min-width: 75em) {
+
+  .about-card {
+    margin: 12rem auto;
+    width: 25rem;
+  }
+
+  .card-portrait {
+    justify-items: left;
+  }
+
+  .card-blurb {
+    text-align: left;
+  }
+
+  .card-image {
+    grid-row: span 2 / span 2;
+  }
+
+  .view-next.about-view.footer-view {
+    grid-column-start: 2;
+    padding: 0 0.5rem 0.25rem 0;
+    justify-self: end;
+  }
+
+}
